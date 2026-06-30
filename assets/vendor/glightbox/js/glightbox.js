@@ -174,8 +174,10 @@
     });
   }
   function hasClass(node, name) {
+    if (!node) return false; // chequeo de nulo
     return node.classList.contains(name);
   }
+
   function closest(elem, selector) {
     while (elem !== document.body) {
       elem = elem.parentElement;
