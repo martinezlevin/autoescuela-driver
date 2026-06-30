@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Simulador de Examen de Tránsito</title>
+
+  <meta name="description" content="Inscribite hoy y obtené tu licencia con confianza.">
+
+  <meta name="keywords" content="autoescuela Córdoba, cursos de manejo, aprender a conducir, instructor profesional, licencia de conducir, clases prácticas, escuela de manejo, clases de conducir Córdoba, escuela de manejo Córdoba capital">
+
+  <meta name="author" content="Autoescuela Driver">
+
+  <meta property="og:title" content="Simulador de Examen de Tránsito">
+  <meta property="og:description" content="Aprendé a manejar con técnicas simples y efectivas. Cursos adaptados a tus necesidades en Córdoba.">
+  <meta property="og:image" content="https://autoescuela-driver.vercel.app/assets/img/SEO.webp">
+  <meta property="og:url" content="https://autoescuela-driver.vercel.app">
+  <meta property="og:type" content="website">
+
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+        crossorigin="anonymous">
+
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/estilos.css" rel="stylesheet">
+
+  <link rel="preload" href="assets/img/logo.webp" as="image">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <picture>
+          <source srcset="assets/img/logo.webp" type="image/webp">
+          <img src="assets/img/logo.png" alt="AUTOESCUELA DRIVER" class="logo-image">
+        </picture>
+        <h1 class="sitename"></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="active">Inicio</a></li>
+          <li><a href="index.html#about">Nosotros</a></li>
+          <li class="dropdown"><a href="index.html#courses"><span>Cursos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="index.html#courses">Curso básico</a></li>
+              <li><a href="index.html#courses">Curso completo</a></li>
+              <li><a href="index.html#courses">Curso express</a></li>
+              <li><a href="index.html#courses">Acompañamiento al examen</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#pricing">Precios</a></li>
+          <li><a href="index.html#testimonials">Testimonios</a></li>
+          <li><a href="index.html#faq">Preguntas Frecuentes</a></li>
+          <li><a href="index.html#contact">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://www.instagram.com/autoescuela_driver/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61583632212228" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.threads.com/@autoescuela_driver?xmt=AQG0tNps0JXon8EegEQ9-VQCbZLQxsCLGMQatueRsd5G9so" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+          <i class="bi bi-threads"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <div class="quiz-wrapper">
+
+    <section class="screen active" id="screen-menu">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">Simulador del Examen</span>
+        <h2>Simulador del Examen</h2>
+      </div><!-- End Section Title -->
+
+      <p class="menu-title">Seleccioná el conjunto de preguntas</p>
+      <div class="cat-grid" id="cat-grid"></div>
+
+      <p class="menu-title">¿Cuántas preguntas?</p>
+      <div class="qty-grid">
+        <button class="qty-btn selected" data-qty="all" onclick="selectQty(this,'all')">Todas</button>
+        <button class="qty-btn" data-qty="20" onclick="selectQty(this,20)">20</button>
+        <button class="qty-btn" data-qty="40" onclick="selectQty(this,40)">40</button>
+        <button class="qty-btn" data-qty="custom" onclick="selectQty(this,'custom')">Otra…</button>
+      </div>
+      <div class="custom-qty" id="custom-qty-row">
+        <label for="custom-n">Cantidad:</label>
+        <input type="number" id="custom-n" min="1" value="10" oninput="validateCustom()">
+      </div>
+
+      <p class="menu-title">Orden</p>
+      <div class="order-grid">
+        <button class="order-btn selected" id="btn-random" onclick="selectOrder(true)"><i class="bi bi-shuffle"></i> Aleatorio</button>
+        <button class="order-btn" id="btn-sequential" onclick="selectOrder(false)"><i class="bi bi-card-checklist"></i> En orden</button>
+      </div>
+
+      <button class="start-btn" id="start-btn" onclick="startQuiz()">Comenzar →</button>
+    </section>
+
+    <section class="screen" id="screen-quiz">
+      <div class="quiz-meta">
+        <span class="q-counter" id="q-counter">1 / 20</span>
+        <span class="q-score" id="q-score">✓ 0</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+      </div>
+
+      <div class="q-card" id="q-card">
+        <div class="q-image" id="q-image-box" style="display:none"></div>
+        <span class="q-id-badge" id="q-id-badge">Pregunta #1</span>
+        <p class="q-text" id="q-text"></p>
+        <ul class="opts-list" id="opts-list"></ul>
+        <div class="feedback-box" id="feedback-box"></div>
+        <button class="next-btn" id="next-btn" onclick="nextQuestion()">Siguiente →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-results">
+      <div class="result-hero">
+        <span class="result-emoji" id="result-emoji">🏆</span>
+        <div class="result-pct" id="result-pct">0%</div>
+        <p class="result-label" id="result-label"></p>
+        <p class="result-verdict" id="result-verdict"></p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card green">
+          <div class="stat-val" id="stat-correct">0</div>
+          <div class="stat-lbl">Correctas</div>
+        </div>
+        <div class="stat-card red">
+          <div class="stat-val" id="stat-wrong">0</div>
+          <div class="stat-lbl">Incorrectas</div>
+        </div>
+      </div>
+
+      <div class="failed-section" id="failed-section"></div>
+
+      <button class="restart-btn" onclick="goMenu()">← Volver al menú</button>
+    </section>
+
+    </div>
+
+  </main>
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8">
+      <div class="ratio ratio-16x9">
+        <iframe src="https://infodecordoba.com.ar/prueba-online-del-manual-del-buen-conductor/examen" 
+                title="Examen de conducción"
+                style="border:none;">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="row gy-3">
+        
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="address">
+            <h4>Ubicación</h4>
+            <p>Córdoba Capital</p>
+            <p>Córdoba, Argentina</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contacto</h4>
+            <p>
+              <strong>WhatsApp:</strong> <span>351 233-7999</span><br>
+              <strong>Email:</strong> <span>autoescueladriver@gmail.com</span><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Horarios de Atención</h4>
+            <p>
+              <strong>Lunes-Sábado:</strong> <span>07HS - 19HS</span><br>
+              <strong>Domingo:</strong> <span>Motores apagados</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4>Seguinos</h4>
+          <div class="social-links d-flex">
+            <a href="https://www.instagram.com/autoescuela_driver/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61583632212228" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.threads.com/@autoescuela_driver?xmt=AQG0tNps0JXon8EegEQ9-VQCbZLQxsCLGMQatueRsd5G9so" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+              <i class="bi bi-threads"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">AUTOESCUELA DRIVER</strong> <span>Todos los derechos reservados</span></p>
+      <div class="credits">
+        Diseñado por <a href="https://guillemartinez.netlify.app/" target="_blank" rel="noopener noreferrer">Guillermo Martinez</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader">
+    <div class="preloader-text">Calentando motores...</div>
+    <div class="loader"></div>
+  </div>
+
+<!-- Vendor Js Files -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEOForGlyywX9HJ09JcYn3nv7wiPVlz7YWyJrWvCX/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous" defer></script>
+
+<script src="assets/vendor/php-email-form/validate.js" defer></script>
+<script src="assets/vendor/aos/aos.js" defer></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+
+<!-- Main JS File -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/quiz.js" defer></script>
+
+<!-- Instagram -->
+<script async src="//www.instagram.com/embed.js"></script>
+
+<!-- Lazy-load Swiper & Isotope -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Swiper en testimonios
+  const testimonialsSection = document.querySelector("#testimonials");
+  if (testimonialsSection) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const script = document.createElement("script");
+          script.src = "assets/vendor/swiper/swiper-bundle.min.js";
+          script.onload = () => {
+            // Esperar a que las imágenes estén listas
+            imagesLoaded(testimonialsSection, () => {
+              new Swiper(".swiper-container", {
+                loop: true,
+                pagination: { el: ".swiper-pagination" },
+                autoplay: { delay: 5000 }
+              });
+            });
+          };
+          document.body.appendChild(script);
+          obs.disconnect();
+        }
+      });
+    }, { threshold: 0.2 });
+    observer.observe(testimonialsSection);
+  }
+
+});
+</script>
+</body>
+</html>

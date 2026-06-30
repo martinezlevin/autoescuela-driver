@@ -1,0 +1,1188 @@
+[
+  {
+    "id": 1,
+    "pregunta": "La luz amarilla intermitente del semáforo indica:",
+    "opciones": [
+      "Disminuir la marcha y circular con máxima precaución.",
+      "Prioridad de paso.",
+      "Prohibido pasar."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Quién tiene prioridad de paso en una rotonda?",
+    "opciones": [
+      "El que intenta ingresar (entrar) a la misma.",
+      "El que está circulando por la misma."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 3,
+    "pregunta": "La banda de detención indica:",
+    "opciones": [
+      "El cruce peatonal.",
+      "La obligación de detener el vehículo antes de esta línea.",
+      "Indica separación de carriles."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Qué indica la doble línea amarilla o blanca continua en curvas o pendientes?",
+    "opciones": [
+      "Que puede adelantarse.",
+      "Que no se puede adelantar.",
+      "Que hay un obstáculo en el camino."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 5,
+    "pregunta": "Está atravesando un cruce de avenidas sin semáforos a 30 Km/h, Ud. está:",
+    "opciones": [
+      "Conduciendo demasiado despacio.",
+      "Conduciendo de acuerdo con el reglamento.",
+      "Sobrepasando el límite de velocidad."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 6,
+    "pregunta": "En esta intersección Ud. conduce el auto rojo, debe:",
+    "opciones": [
+      "Detenerse obligatoriamente y ceder el paso a todos los vehículos.",
+      "Detenerse sólo para cederle el paso al auto amarillo."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Debe avanzar con luz verde si hay embotellamiento del otro lado?",
+    "opciones": [
+      "Es indiferente.",
+      "No.",
+      "Sí."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Quién tiene prioridad en una senda peatonal no regulada?",
+    "opciones": [
+      "Los peatones en forma absoluta.",
+      "Los vehículos."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Ante esta señal cuál es la conducta a seguir?",
+    "opciones": [
+      "Detener el vehículo en forma total.",
+      "Disminuir la marcha para observar el tránsito.",
+      "Continuar la marcha."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cuál es la velocidad máxima en avenidas de Córdoba?",
+    "opciones": [
+      "40 Km/h.",
+      "60 Km/h.",
+      "80 Km/h."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Los vehículos que giran deben ceder el paso a peatones?",
+    "opciones": [
+      "Sí, siempre que el peatón cruce con luz verde.",
+      "No, los vehículos tienen siempre prioridad."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Qué debe hacer antes de girar en una intersección?",
+    "opciones": [
+      "Advertir la maniobra con 20 m de antelación.",
+      "Advertir la maniobra con 30 m de antelación.",
+      "Advertir la maniobra con 10 m de antelación."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 13,
+    "pregunta": "Si el semáforo está en rojo pero un inspector indica avanzar:",
+    "opciones": [
+      "Indicarle al inspector que la luz está roja.",
+      "Obedecer la indicación del inspector.",
+      "Esperar la luz verde."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Después de un adelantamiento debe colocar el guiño?",
+    "opciones": [
+      "Sí, siempre.",
+      "Sólo en horario nocturno.",
+      "No es obligatorio."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Debe ceder el paso a peatones en cruces no semaforizados?",
+    "opciones": [
+      "Siempre.",
+      "Nunca.",
+      "Según las circunstancias."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Qué luz se usa para advertir inconveniencia de sobrepaso?",
+    "opciones": [
+      "Luz de giro derecha.",
+      "Luz de baliza.",
+      "Luz de giro izquierda."
+    ],
+    "correcta": 2
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Se puede circular sobre las líneas que separan carriles?",
+    "opciones": [
+      "Sí.",
+      "No."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué línea permite cambiar de carril?",
+    "opciones": [
+      "La línea continua.",
+      "La línea discontinua.",
+      "La doble continua."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 19,
+    "pregunta": "¿La luz roja intermitente del semáforo significa?",
+    "opciones": [
+      "CEDA EL PASO.",
+      "PARE.",
+      "Disminuir la velocidad."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Debe portar la licencia de conducir vigente?",
+    "opciones": [
+      "No.",
+      "Sí."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 21,
+    "pregunta": "¿Por qué lugar y en qué sentido deberá caminar el peatón en zonas sin vereda?",
+    "opciones": [
+      "Fuera de la calzada, en sentido contrario a la circulación vehicular.",
+      "Sobre la calzada, en el mismo sentido de la circulación vehicular.",
+      "Fuera de la calzada, en el mismo sentido de la circulación vehicular."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 22,
+    "pregunta": "El triángulo pintado en la calzada indica:",
+    "opciones": [
+      "El sentido de circulación de los vehículos.",
+      "Que circula por una avenida.",
+      "La obligación de ceder el paso."
+    ],
+    "correcta": 2
+  },
+  {
+    "id": 23,
+    "pregunta": "En una intersección no regulada, ¿qué vehículo tiene prioridad?",
+    "opciones": [
+      "El rojo.",
+      "El amarillo.",
+      "Es indistinto."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 24,
+    "pregunta": "En un cruce NO semaforizado, ¿quién tiene prioridad?",
+    "opciones": [
+      "El vehículo.",
+      "El peatón.",
+      "Es indiferente."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 25,
+    "pregunta": "¿El vehículo celeste circula correctamente?",
+    "opciones": [
+      "Sí, puede circular por cualquier carril.",
+      "Sí, debe dejar el carril derecho a los más lentos.",
+      "No, debe circular por el carril derecho y usar el izquierdo sólo para adelantamiento."
+    ],
+    "correcta": 2
+  },
+  {
+    "id": 26,
+    "pregunta": "Al llegar a una intersección sin señalizar, debe:",
+    "opciones": [
+      "Ceder el paso a los vehículos que se presenten por la derecha.",
+      "Ceder el paso sólo a los que circulen por la vía principal.",
+      "Ceder el paso a los que circulen más rápido."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 27,
+    "pregunta": "¿En qué caso está permitido adelantarse?",
+    "opciones": [
+      "En todas las intersecciones.",
+      "En las rotondas.",
+      "En pasos peatonales si la velocidad no supera 40 Km/h."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 28,
+    "pregunta": "¿Qué línea pintada prohíbe cambiar de carril?",
+    "opciones": [
+      "Las continuas.",
+      "Las discontinuas."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 29,
+    "pregunta": "¿Puede adelantar el automóvil al ómnibus en una intersección?",
+    "opciones": [
+      "Sí, porque es voluminoso.",
+      "No, porque está prohibido.",
+      "Sí, dejando espacio lateral."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 30,
+    "pregunta": "¿Está permitido el adelantamiento por la derecha?",
+    "opciones": [
+      "Sí, por la banquina.",
+      "Sí, en calzadas de varios carriles cuando los del izquierdo estén detenidos.",
+      "Nunca."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 31,
+    "pregunta": "Si circula por un carril con flecha de giro a la derecha:",
+    "opciones": [
+      "Debe girar obligatoriamente.",
+      "Puede continuar sin girar."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 32,
+    "pregunta": "En una intersección semaforizada con luz roja, si el agente indica avanzar:",
+    "opciones": [
+      "Detenerse porque el semáforo está en rojo.",
+      "Obedecer al agente de tránsito."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 33,
+    "pregunta": "¿Debe ceder el paso a una bicicleta por la derecha?",
+    "opciones": [
+      "Sí, porque circula por la derecha.",
+      "No, el ciclista debe ceder.",
+      "No, por cortesía."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 34,
+    "pregunta": "¿Qué debe hacer el auto rojo en esta situación?",
+    "opciones": [
+      "Ceder el paso al vehículo de la derecha.",
+      "Detenerse y ceder el paso a ambos vehículos.",
+      "Ceder el paso al vehículo de la izquierda."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 35,
+    "pregunta": "¿En qué caso puede circular con el ITV vencido?",
+    "opciones": [
+      "En ninguno.",
+      "Dentro de los 15 días posteriores.",
+      "Nunca."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 36,
+    "pregunta": "Semáforo rojo con flecha verde a la derecha indica:",
+    "opciones": [
+      "Detenerse cualquiera sea la dirección.",
+      "Girar obligatoriamente a la derecha.",
+      "Está prohibido girar."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 37,
+    "pregunta": "¿Puede ser requerido para control de alcoholemia tras una infracción?",
+    "opciones": [
+      "Sí, siempre.",
+      "Sí, sólo si produce accidente.",
+      "No."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 38,
+    "pregunta": "¿Debe ceder el paso a vehículos de emergencia?",
+    "opciones": [
+      "Sí, siempre.",
+      "Sí, sólo en vías urbanas.",
+      "Sí, cuando circulen en urgencia con señales lumínicas y acústicas."
+    ],
+    "correcta": 2
+  },
+  {
+    "id": 39,
+    "pregunta": "¿Debe circular por la banquina para facilitar adelantamiento?",
+    "opciones": [
+      "Sí, siempre.",
+      "Sí, en vías de un carril.",
+      "No, está prohibido salvo emergencia."
+    ],
+    "correcta": 2
+  },
+  {
+    "id": 40,
+    "pregunta": "¿Dónde puede estacionar en una calzada sin señalización?",
+    "opciones": [
+      "En el costado derecho, a no menos de 5 m de la senda peatonal.",
+      "En el costado izquierdo.",
+      "Es indistinto."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 41,
+    "pregunta": "Ud. conductor, utiliza las luces altas:",
+    "opciones": [
+      "Cuando la luz natural es insuficiente.",
+      "En cualquier momento.",
+      "De manera excepcional cuando las situaciones del tránsito lo requieran."
+    ],
+    "correcta": 2
+  },
+  {
+    "id": 42,
+    "pregunta": "¿Hay que encender las luces de giro siempre que se produzca un cambio de carril?",
+    "opciones": [
+      "No, solamente si es de noche.",
+      "Sí, tanto de día como de noche."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 43,
+    "pregunta": "¿Está permitido mientras conduzco utilizar sistema de comunicación telefónica manual?",
+    "opciones": [
+      "Sí.",
+      "No."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 44,
+    "pregunta": "En Córdoba es obligatorio que los menores de 10 años viajen:",
+    "opciones": [
+      "En el asiento delantero con cinturón.",
+      "En el asiento trasero con cinturón.",
+      "Es indistinto."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 45,
+    "pregunta": "El uso del cinturón de seguridad es obligatorio para:",
+    "opciones": [
+      "El conductor.",
+      "El conductor y acompañante.",
+      "Todos los ocupantes."
+    ],
+    "correcta": 2
+  },
+  {
+    "id": 46,
+    "pregunta": "El vehículo debe exhibir sus chapas patentes:",
+    "opciones": [
+      "Colocadas fijas, limpias y legibles.",
+      "En el parabrisas y luneta.",
+      "Es indistinto."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 47,
+    "pregunta": "¿Cuándo debe realizar la Inspección Técnica Vehicular (ITV)?",
+    "opciones": [
+      "Si el vehículo tiene más de 2 años y renovarla anualmente.",
+      "Si el vehículo tiene más de 3 años y renovarla semestralmente.",
+      "Si el vehículo tiene más de 2 años y renovarla semestralmente."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 48,
+    "pregunta": "En proximidad de establecimientos escolares la velocidad máxima es:",
+    "opciones": [
+      "30 Km/h.",
+      "40 Km/h.",
+      "60 Km/h."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 49,
+    "pregunta": "En una rotonda, ¿quién tiene prioridad?",
+    "opciones": [
+      "El vehículo que ingresa.",
+      "El vehículo que egresa."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 50,
+    "pregunta": "En una intersección con luz roja intermitente debo:",
+    "opciones": [
+      "Cruzar a la misma velocidad.",
+      "Cruzar a mínima velocidad.",
+      "Detener la marcha y reiniciar sólo sin riesgo."
+    ],
+    "correcta": 2
+  },
+  {
+    "id": 51,
+    "pregunta": "¿Cuándo se pierde la prioridad de paso de mano derecha?",
+    "opciones": [
+      "En avenidas.",
+      "Frente a la señal PARE.",
+      "Nunca."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 52,
+    "pregunta": "Las líneas blancas continuas indican:",
+    "opciones": [
+      "Posibilidad de cambiar de carril.",
+      "Imposibilidad de cambiar de carril."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 53,
+    "pregunta": "La señal que indica límite de velocidad máxima es:",
+    "opciones": [
+      "Opción a.",
+      "Opción b."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 54,
+    "pregunta": "El límite máximo de velocidad en calles es:",
+    "opciones": [
+      "50 Km/h.",
+      "40 Km/h.",
+      "60 Km/h."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 55,
+    "pregunta": "En una intersección no semaforizada la velocidad máxima es:",
+    "opciones": [
+      "30 Km/h.",
+      "40 Km/h.",
+      "60 Km/h."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 56,
+    "pregunta": "¿Cuándo se pierde la prioridad de paso de mano derecha?",
+    "opciones": [
+      "Cuando se desemboque de una vía de tierra a una pavimentada.",
+      "En avenidas.",
+      "Nunca."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 57,
+    "pregunta": "El límite máximo en vías con semáforos coordinados es:",
+    "opciones": [
+      "60 Km/h.",
+      "Velocidad de la onda verde.",
+      "40 Km/h."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 58,
+    "pregunta": "La señal que indica prohibición absoluta de estacionar es:",
+    "opciones": [
+      "Opción a.",
+      "Opción b."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 59,
+    "pregunta": "La señal permite:",
+    "opciones": [
+      "El estacionamiento.",
+      "La detención para carga/descarga o ascenso/descenso con conductor presente."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 60,
+    "pregunta": "En vías sin dirección obligatoria señalizada se entiende:",
+    "opciones": [
+      "Que la vía es de un solo sentido.",
+      "Que la vía es de doble sentido."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 61,
+    "pregunta": "¿Qué indicación debo realizar para anunciar que no puede adelantar?",
+    "opciones": [
+      "Luz de giro derecha.",
+      "Luz de baliza.",
+      "Luz de giro izquierda."
+    ],
+    "correcta": 2
+  },
+  {
+    "id": 62,
+    "pregunta": "En un cruce NO semaforizado, accidente en senda peatonal: ¿Quién es responsable?",
+    "opciones": [
+      "El conductor.",
+      "El peatón.",
+      "El conductor si circulaba a más de 40 km/h."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 63,
+    "pregunta": "¿Está permitido adelantarse por la banquina en un congestionamiento?",
+    "opciones": [
+      "Sí.",
+      "No."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 64,
+    "pregunta": "¿Dónde está permitido el adelantamiento?",
+    "opciones": [
+      "En intersecciones.",
+      "En vías con varios carriles en el mismo sentido.",
+      "En puentes, túneles, curvas."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 65,
+    "pregunta": "¿Qué indicación debo realizar para anunciar que puede adelantar sin riesgo?",
+    "opciones": [
+      "Luz de giro derecha.",
+      "Luz de baliza.",
+      "Ninguna indicación."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 66,
+    "pregunta": "¿Cuál es la forma correcta de cruzar la calzada como peatón?",
+    "opciones": [
+      "Por cualquier lugar si no circulan vehículos.",
+      "Por la prolongación imaginaria de la vereda.",
+      "A mitad de cuadra."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 67,
+    "pregunta": "¿El peatón está obligado a usar pasos peatonales a distinto nivel?",
+    "opciones": [
+      "Sí.",
+      "No."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 68,
+    "pregunta": "¿Qué documentación NO es necesaria?",
+    "opciones": [
+      "Licencia de conducir.",
+      "Cédula del vehículo.",
+      "Certificado de ITV.",
+      "Libreta de salud."
+    ],
+    "correcta": 3
+  },
+  {
+    "id": 69,
+    "pregunta": "¿Es obligatorio portar documentación habilitante del equipo de GNC?",
+    "opciones": [
+      "Sí.",
+      "No.",
+      "Es indistinto."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 70,
+    "pregunta": "¿Puede circular sin paragolpes aunque tenga ITV aprobado?",
+    "opciones": [
+      "Sí.",
+      "No."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 71,
+    "pregunta": "Índice máximo de alcohol permitido en aire expirado para mayores de 21 años:",
+    "opciones": [
+      "0,4 gr/l.",
+      "0,2 gr/l.",
+      "0,0 gr/l."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 72,
+    "pregunta": "¿En qué caso pueden retener su licencia de conducir?",
+    "opciones": [
+      "Por cruzar un semáforo en rojo.",
+      "Por conducir alcoholizado.",
+      "Por carecer de chapas patentes."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 73,
+    "pregunta": "¿En qué situaciones puede girar en U?",
+    "opciones": [
+      "En esquinas semaforizadas.",
+      "A mitad de cuadra.",
+      "En ningún caso."
+    ],
+    "correcta": 2
+  },
+  {
+    "id": 74,
+    "pregunta": "¿Cuándo puede ser removido su vehículo por grúa municipal?",
+    "opciones": [
+      "Circular sin chapas patentes.",
+      "Parquímetro vencido.",
+      "Cruzar semáforo en rojo."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 75,
+    "pregunta": "¿Puede ser removido su vehículo si circula con licencia vencida?",
+    "opciones": [
+      "Sí, aunque circule solo.",
+      "No, si el acompañante tiene licencia vigente.",
+      "Sí, si circula sin seguro obligatorio."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 76,
+    "pregunta": "¿En intersecciones NO semaforizadas puede girar a la izquierda?",
+    "opciones": [
+      "Sí.",
+      "No."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 77,
+    "pregunta": "¿Puede girar a la izquierda si el semáforo no tiene flecha verde?",
+    "opciones": [
+      "Sí, porque está en verde.",
+      "No, está prohibido.",
+      "Sí, si no viene ningún vehículo."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 78,
+    "pregunta": "¿Cuál es la forma correcta de circular?",
+    "opciones": [
+      "Conservando la derecha, por el centro del carril.",
+      "Sobre la línea discontinua.",
+      "Por cualquier carril."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 79,
+    "pregunta": "¿Cuándo puede circular el peatón por la calzada?",
+    "opciones": [
+      "Al distribuir propaganda.",
+      "Al conversar con un vehículo detenido.",
+      "Al cruzar por la senda peatonal."
+    ],
+    "correcta": 2
+  },
+  {
+    "id": 80,
+    "pregunta": "¿Circular sin portar licencia de conducir es causal de remoción?",
+    "opciones": [
+      "Sí.",
+      "No.",
+      "No, porque exhibo la cédula."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 81,
+    "pregunta": "La señalización de tránsito debe ser respetada por:",
+    "opciones": [
+      "El conductor.",
+      "El conductor y el peatón."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 82,
+    "pregunta": "¿En una avenida señalizada con la señal, a qué velocidad máxima puede circular?",
+    "opciones": [
+      "60 Km/h.",
+      "40 Km/h."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 83,
+    "pregunta": "Al estar habilitado con licencia de conducir, implica:",
+    "opciones": [
+      "Aceptar controles y exigencias del Código de Tránsito.",
+      "Estar habilitado pero no sujeto a controles.",
+      "Aceptar controles pero no conocer normativas."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 84,
+    "pregunta": "¿La licencia Categoría B habilita a conducir motos?",
+    "opciones": [
+      "Sí.",
+      "No.",
+      "Es indistinto."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 85,
+    "pregunta": "¿La licencia profesional Categoría Transporte Escolar habilita a conducir vehículos particulares?",
+    "opciones": [
+      "Sí.",
+      "No."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 86,
+    "pregunta": "¿Es válida en Córdoba una licencia otorgada por otro municipio si el titular vive en Córdoba?",
+    "opciones": [
+      "Sí, si está vigente.",
+      "No, debe ser otorgada por el municipio de domicilio.",
+      "Sí, si la porta."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 87,
+    "pregunta": "¿Plazo máximo para denunciar cambios de datos en la licencia?",
+    "opciones": [
+      "120 días.",
+      "90 días.",
+      "100 días."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 88,
+    "pregunta": "¿Es obligatorio que la licencia esté firmada por el titular?",
+    "opciones": [
+      "Sí.",
+      "No.",
+      "Es indistinto."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 89,
+    "pregunta": "Si comienza a usar anteojos, ¿debe denunciar el cambio?",
+    "opciones": [
+      "Sí.",
+      "No.",
+      "Es indistinto."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 90,
+    "pregunta": "¿Puede circular un vehículo particular por carriles selectivos en horario de selectividad?",
+    "opciones": [
+      "Sí.",
+      "No.",
+      "No, si está controlado por agente."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 91,
+    "pregunta": "¿En una vía de sentido único puede estacionar a mano izquierda?",
+    "opciones": [
+      "Sí, si está permitido por señal.",
+      "Sí.",
+      "Nunca."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 92,
+    "pregunta": "¿Es obligatorio el uso de cinturón y cabezales normalizados?",
+    "opciones": [
+      "Sí.",
+      "No."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 93,
+    "pregunta": "¿Puede ser sancionado si conduce sin limpiaparabrisas?",
+    "opciones": [
+      "Sí.",
+      "Sí, sólo si llueve.",
+      "No."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 94,
+    "pregunta": "¿Puede ser sancionado si el vehículo carece de espejos retrovisores?",
+    "opciones": [
+      "Sí.",
+      "No."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 95,
+    "pregunta": "¿Puede ser removido un vehículo sin guardabarros?",
+    "opciones": [
+      "Sí.",
+      "No.",
+      "Sólo acta de infracción."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 96,
+    "pregunta": "¿Puede ser removido un vehículo con neumáticos sin dibujo visible?",
+    "opciones": [
+      "Sí, porque es falta de seguridad activa.",
+      "No.",
+      "No, en vías urbanas."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 97,
+    "pregunta": "Si el vehículo excede niveles de humo y gases tóxicos, la autoridad puede:",
+    "opciones": [
+      "Sólo labrar acta.",
+      "Labrar acta y removerlo con grúa."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 98,
+    "pregunta": "¿Puede circular con ITV aprobado si luego excede gases tóxicos?",
+    "opciones": [
+      "No ser sometido a control.",
+      "No ser sancionado.",
+      "Ser removido con grúa."
+    ],
+    "correcta": 2
+  },
+  {
+    "id": 99,
+    "pregunta": "¿Puede reemplazar el depósito de combustible original?",
+    "opciones": [
+      "Sí, temporalmente.",
+      "Está absolutamente prohibido."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 100,
+    "pregunta": "¿Es obligatorio circular con documentación del seguro?",
+    "opciones": [
+      "No.",
+      "Sí, con póliza y documentación vigente."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 101,
+    "pregunta": "¿El portar la póliza del seguro acredita que el vehículo está asegurado?",
+    "opciones": [
+      "Sí, sólo exhibiendo la póliza.",
+      "No, debo exhibir documentación vigente."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 102,
+    "pregunta": "En caso de extravío de chapas patentes, sólo podrá circular:",
+    "opciones": [
+      "Con denuncia policial.",
+      "Con autorización vigente del Registro Nacional de la Propiedad del Automotor."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 103,
+    "pregunta": "¿Está permitido ascender o descender de un vehículo en movimiento?",
+    "opciones": [
+      "No, está absolutamente prohibido.",
+      "Sí, si el movimiento es mínimo.",
+      "Sí, si no pone en riesgo la seguridad."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 104,
+    "pregunta": "¿Dónde puede estacionar respecto a la senda peatonal?",
+    "opciones": [
+      "Dentro de los cinco metros posteriores.",
+      "Después de los cinco metros posteriores.",
+      "Es indistinto."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 105,
+    "pregunta": "¿Puede estacionar en parada de transporte público?",
+    "opciones": [
+      "Sí, si no hay señal.",
+      "No, está prohibido dentro de 10 m.",
+      "Sí, después de las 22 hs."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 106,
+    "pregunta": "¿Está permitido estacionar en la entrada de su garaje particular?",
+    "opciones": [
+      "No, está prohibido.",
+      "No, si está sobre mano izquierda.",
+      "Sí, porque es su propiedad."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 107,
+    "pregunta": "¿Está permitido estacionar vehículos en la calzada para exhibirlos en venta?",
+    "opciones": [
+      "Sí, si no hay señal.",
+      "No, está prohibido.",
+      "Sí, sobre mano derecha."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 108,
+    "pregunta": "¿Puede estacionar frente a acceso de playa de estacionamiento cerrada de noche?",
+    "opciones": [
+      "Sí, porque no funciona.",
+      "No, está prohibido.",
+      "Sí, si está sobre mano derecha."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 109,
+    "pregunta": "¿Está permitido encolumnarse detrás de un vehículo de emergencia para aprovechar prioridad?",
+    "opciones": [
+      "No, está absolutamente prohibido.",
+      "Sí, si no entorpece.",
+      "Sí, siempre."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 110,
+    "pregunta": "¿Está permitido circular marcha atrás?",
+    "opciones": [
+      "Para maniobras de estacionamiento.",
+      "Para retomar otra calzada.",
+      "Para girar en U."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 111,
+    "pregunta": "¿Está permitido circular marcha atrás para egresar de una calle sin salida?",
+    "opciones": [
+      "No.",
+      "Sí."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 112,
+    "pregunta": "¿Está permitido circular marcha atrás para egresar de un garaje?",
+    "opciones": [
+      "Sí.",
+      "No."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 113,
+    "pregunta": "¿Puede efectuar adelantamiento zigzagueante en vías multicarril?",
+    "opciones": [
+      "Sí.",
+      "No.",
+      "Sí, con precaución."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 114,
+    "pregunta": "¿Debe ceder paso a vehículo de emergencia sin señales encendidas?",
+    "opciones": [
+      "Sí.",
+      "No."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 115,
+    "pregunta": "¿Está permitido atravesar paso a nivel con sistemas de seguridad en advertencia?",
+    "opciones": [
+      "Sí, si el tren está lejos.",
+      "No, está absolutamente prohibido.",
+      "Sí, con marcha rápida."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 116,
+    "pregunta": "¿En qué casos está permitido adelantamiento por la derecha?",
+    "opciones": [
+      "Nunca.",
+      "Cuando los del carril izquierdo estén detenidos.",
+      "Siempre por la banquina."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 117,
+    "pregunta": "¿Está permitido adelantamiento por la derecha si el vehículo delante colocó giro izquierda?",
+    "opciones": [
+      "Sí.",
+      "No.",
+      "Siempre."
+    ],
+    "correcta": 0
+  },
+  {
+    "id": 118,
+    "pregunta": "¿Puede conducir si consume medicamentos que alteran facultades?",
+    "opciones": [
+      "Sí.",
+      "No.",
+      "Sí, pero nunca de noche."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 119,
+    "pregunta": "¿El uso de la bocina está permitido?",
+    "opciones": [
+      "Siempre.",
+      "Sólo en caso de peligro.",
+      "Siempre en intersecciones."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 120,
+    "pregunta": "¿El uso de la bocina está absolutamente prohibido?",
+    "opciones": [
+      "Sí.",
+      "No, está permitido en caso de peligro.",
+      "No, sólo de día."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 121,
+    "pregunta": "El uso de la bocina está permitido:",
+    "opciones": [
+      "Como señal acústica al vehículo adelante.",
+      "Sólo en caso de peligro."
+    ],
+    "correcta": 1
+  },
+  {
+    "id": 122,
+    "pregunta": "¿Ante la avería de su vehículo qué debe hacer?",
+    "opciones": [
+      "Colocar balizas.",
+      "Detenerse en lugar seguro.",
+      "Avisar a la autoridad."
+    ],
+    "correcta": 0
+  }
+]
