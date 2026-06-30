@@ -52,15 +52,28 @@
     });
   });
 
-  /**
-   * Preloader
-   */
+/**
+ * Preloader
+ */
+document.addEventListener('DOMContentLoaded', () => {
   const preloader = document.querySelector('#preloader');
-  if (preloader) {
+
+  // Revisamos si ya se mostró antes
+  const preloaderShown = localStorage.getItem('preloaderShown');
+
+  if (preloader && !preloaderShown) {
+    // Primera visita → mostramos y luego lo removemos
     window.addEventListener('load', () => {
       preloader.remove();
+      // Guardamos flag para que no se muestre más
+      localStorage.setItem('preloaderShown', 'true');
     });
+  } else if (preloader) {
+    // Si ya se mostró antes → lo quitamos inmediatamente
+    preloader.remove();
   }
+});
+
 
   /**
    * Scroll top button
