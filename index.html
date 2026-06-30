@@ -1375,24 +1375,72 @@ document.getElementById("whatsappForm").addEventListener("submit", function(e){
   <div class="loader"></div>
 </div>
 
+
 <!-- Vendor Js Files -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEOForGlyywX9HJ09JcYn3nv7wiPVlz7YWyJrWvCX/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous" defer></script>
-
-<script src="assets/vendor/php-email-form/validate.js" defer></script>
 <script src="assets/vendor/aos/aos.js" defer></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
 <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
 <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js" defer></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
 
 <!-- Main JS File -->
 <script src="assets/js/main.js" defer></script>
 
 <!-- Instagram -->
 <script async src="//www.instagram.com/embed.js"></script>
+
+<!-- Lazy-load Swiper & Isotope -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Swiper en testimonios
+  const testimonialsSection = document.querySelector("#testimonials");
+  if (testimonialsSection) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const script = document.createElement("script");
+          script.src = "assets/vendor/swiper/swiper-bundle.min.js";
+          script.onload = () => {
+            new Swiper(".swiper-container", {
+              loop: true,
+              pagination: { el: ".swiper-pagination" },
+              autoplay: { delay: 5000 }
+            });
+          };
+          document.body.appendChild(script);
+          obs.disconnect();
+        }
+      });
+    }, { threshold: 0.2 });
+    observer.observe(testimonialsSection);
+  }
+
+  // Isotope en cursos/galería
+  const gallerySection = document.querySelector("#courses");
+  if (gallerySection) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const script = document.createElement("script");
+          script.src = "assets/vendor/isotope-layout/isotope.pkgd.min.js";
+          script.onload = () => {
+            new Isotope(".gallery-container", {
+              itemSelector: ".gallery-item",
+              layoutMode: "fitRows"
+            });
+          };
+          document.body.appendChild(script);
+          obs.disconnect();
+        }
+      });
+    }, { threshold: 0.2 });
+    observer.observe(gallerySection);
+  }
+});
+</script>
+
 
 
 </body>
