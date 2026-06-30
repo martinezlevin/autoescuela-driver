@@ -48,6 +48,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Preload del logo en el head -->
+  <link rel="preload" href="assets/img/logo.webp" as="image">
 </head>
 
 
@@ -56,12 +59,16 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo.webp" alt="AUTOESCUELA DRIVER" class="logo-image">
-        <h1 class="sitename">
+    <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <picture>
+        <source srcset="assets/img/logo.webp" type="image/webp">
+        <img src="assets/img/logo.png" 
+            alt="AUTOESCUELA DRIVER" 
+            class="logo-image">
+      </picture>
+      <h1 class="sitename"></h1>
+    </a>
 
-        </h1>
-      </a>
 
 <nav id="navmenu" class="navmenu">
   <ul>
@@ -144,7 +151,11 @@
           <div class="col-lg-8">
             <div class="hero-image-container" data-aos="zoom-in" data-aos-delay="400">
               <div class="hero-image">
-                <img src="assets/img/about/about-16.webp" alt="Business Innovation" class="img-fluid">
+                <img 
+                src="assets/img/about/about-16.webp" 
+                alt="Autoescuela Driver - Clases de manejo en Córdoba" 
+                class="img-fluid"
+                loading="lazy">
                 <div class="image-decoration"></div>
               </div>
             </div>
@@ -208,7 +219,10 @@
           <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="200">
             <div class="image-wrapper">
               <div class="image-box">
-                <img src="assets/img/about/about-square-1.webp" class="img-fluid" alt="About Image" loading="lazy">
+              <img src="assets/img/about/about-square-1.webp" 
+              class="img-fluid" 
+              alt="About Image" 
+              loading="lazy">
               </div>
               <div class="experience-box" data-aos="zoom-in" data-aos-delay="300">
                 <div class="years">15+</div>
@@ -382,7 +396,11 @@
                 <div class="row align-items-center">
                   <div class="col-lg-4">
                     <div class="cta-image" data-aos="zoom-in" data-aos-delay="200">
-                      <img src="assets/img/services/services-1.webp" alt="Services" class="img-fluid rounded-circle">
+                    <img 
+                    src="assets/img/services/services-1.webp" 
+                    alt="Services" 
+                    class="img-fluid rounded-circle" 
+                    loading="lazy">
                     </div>
                   </div>
                   <div class="col-lg-8">
@@ -545,7 +563,7 @@
                     <i class="bi bi-star-fill"></i>
                   </div>
                   <div class="profile-info">
-                    <img src="assets/img/person/person-m-8.webp" alt="Profile Image">
+                    <img src="assets/img/person/person-m-8.webp" alt="Profile Image" loading="lazy">
                     <div>
                       <h3>Robert Johnson</h3>
                       <h4>Marketing Director</h4>
@@ -572,7 +590,7 @@
                     <i class="bi bi-star-fill"></i>
                   </div>
                   <div class="profile-info">
-                    <img src="assets/img/person/person-f-3.webp" alt="Profile Image">
+                    <img src="assets/img/person/person-f-3.webp" alt="Profile Image" loading="lazy">
                     <div>
                       <h3>Lisa Williams</h3>
                       <h4>Product Manager</h4>
@@ -599,7 +617,7 @@
                     <i class="bi bi-star-fill"></i>
                   </div>
                   <div class="profile-info">
-                    <img src="assets/img/person/person-f-10.webp" alt="Profile Image">
+                    <img src="assets/img/person/person-f-10.webp" alt="Profile Image" loading="lazy">
                     <div>
                       <h3>Emma Parker</h3>
                       <h4>UX Designer</h4>
@@ -626,7 +644,7 @@
                     <i class="bi bi-star-fill"></i>
                   </div>
                   <div class="profile-info">
-                    <img src="assets/img/person/person-m-5.webp" alt="Profile Image">
+                    <img src="assets/img/person/person-m-5.webp" alt="Profile Image" loading="lazy">
                     <div>
                       <h3>David Miller</h3>
                       <h4>Senior Developer</h4>
@@ -653,7 +671,7 @@
                     <i class="bi bi-star-fill"></i>
                   </div>
                   <div class="profile-info">
-                    <img src="assets/img/person/person-m-2.webp" alt="Profile Image">
+                    <img src="assets/img/person/person-m-2.webp" alt="Profile Image" loading="lazy">
                     <div>
                       <h3>Michael Davis</h3>
                       <h4>CEO &amp; Founder</h4>
@@ -680,7 +698,7 @@
                     <i class="bi bi-star-fill"></i>
                   </div>
                   <div class="profile-info">
-                    <img src="assets/img/person/person-f-7.webp" alt="Profile Image">
+                    <img src="assets/img/person/person-f-7.webp" alt="Profile Image" loading="lazy">
                     <div>
                       <h3>Sarah Thompson</h3>
                       <h4>Art Director</h4>
@@ -690,12 +708,11 @@
               </div>
             </div><!-- End testimonial item -->
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
+        <div class="swiper-pagination"></div>
       </div>
 
     </section><!-- /Testimonials Section -->
+
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
