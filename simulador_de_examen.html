@@ -89,47 +89,90 @@
     </div>
   </header>
 
-  <main>
 
-    <div class="quiz-wrapper">
+<main>
+  <div class="quiz-wrapper">
 
+    <!-- Pantalla de menú -->
     <section class="screen active" id="screen-menu">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <span class="description-title">Simulador del Examen</span>
         <h2>Simulador del Examen</h2>
-      </div><!-- End Section Title -->
-
-      <p class="menu-title">Seleccioná el conjunto de preguntas</p>
-      <div class="cat-grid" id="cat-grid"></div>
-
-      <p class="menu-title">¿Cuántas preguntas?</p>
-      <div class="qty-grid">
-        <button class="qty-btn selected" data-qty="all" onclick="selectQty(this,'all')">Todas</button>
-        <button class="qty-btn" data-qty="20" onclick="selectQty(this,20)">20</button>
-        <button class="qty-btn" data-qty="40" onclick="selectQty(this,40)">40</button>
-        <button class="qty-btn" data-qty="custom" onclick="selectQty(this,'custom')">Otra…</button>
-      </div>
-      <div class="custom-qty" id="custom-qty-row">
-        <label for="custom-n">Cantidad:</label>
-        <input type="number" id="custom-n" min="1" value="10" oninput="validateCustom()">
+        <p>Practicá con el simulador del examen teórico de manejo de la ciudad de Córdoba. Es la práctica ideal para la prueba del Buen Conductor Córdoba, con preguntas actualizadas basadas en el Manual del Buen Conductor.</p>
       </div>
 
-      <p class="menu-title">Orden</p>
-      <div class="order-grid">
-        <button class="order-btn selected" id="btn-random" onclick="selectOrder(true)"><i class="bi bi-shuffle"></i> Aleatorio</button>
-        <button class="order-btn" id="btn-sequential" onclick="selectOrder(false)"><i class="bi bi-card-checklist"></i> En orden</button>
-      </div>
+<div class="container my-4 exam-instructions">
+  <h3 class="text-info fw-semibold">INSTRUCCIONES DEL EXAMEN</h3>
+  <h4 class="text-light fw-bold">¡ESTAMOS LISTOS PARA EMPEZAR!</h4>
+  <p class="text-secondary">Lee con atención las instrucciones y cuando estés preparado hace click en el botón de abajo.</p>
 
-      <button class="start-btn" id="start-btn" onclick="startQuiz()">Comenzar →</button>
+  <div class="row g-3 my-4">
+    <div class="col-6 col-md-3">
+      <div class="card bg-dark text-light text-center h-100">
+        <div class="card-body">
+          <h5 class="card-title text-warning">20 minutos</h5>
+          <p class="card-text">Duración total</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card bg-dark text-light text-center h-100">
+        <div class="card-body">
+          <h5 class="card-title text-warning">40 preguntas</h5>
+          <p class="card-text">Selección aleatoria</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card bg-dark text-light text-center h-100">
+        <div class="card-body">
+          <h5 class="card-title text-warning">70%</h5>
+          <p class="card-text">Para aprobar</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card bg-dark text-light text-center h-100">
+        <div class="card-body">
+          <h5 class="card-title text-warning">Feedback</h5>
+          <p class="card-text">Al instante</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="list-unstyled text-light">
+    <li>Podés navegar libremente entre preguntas.</li>
+    <li>Podés repetir el examen las veces que quieras.</li>
+    <li>En cada intento, aparecerán preguntas diferentes.</li>
+    <li>Al finalizar, recibís tu puntaje y el detalle de respuestas.</li>
+  </ul>
+
+<div class="d-flex justify-content-center">
+<button class="btn-quiz-animated" onclick="startQuiz()">
+  <span>Comenzar Examen</span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 43">
+    <polygon points="39.58,4.46 44.11,0 66,21.5 44.11,43 39.58,38.54 56.94,21.5"></polygon>
+    <polygon points="19.79,4.46 24.32,0 46.21,21.5 24.32,43 19.79,38.54 37.15,21.5"></polygon>
+    <polygon points="0,4.46 4.53,0 26.42,21.5 4.53,43 0,38.54 17.36,21.5"></polygon>
+  </svg>
+</button>
+</div>
+
+  <p class="text-secondary text-center mt-2">Respondé con calma, podés navegar entre preguntas libremente.</p>
+</div>
+
     </section>
 
+    <!-- Pantalla de examen -->
     <section class="screen" id="screen-quiz">
       <div class="quiz-meta">
-        <span class="q-counter" id="q-counter">1 / 20</span>
-        <span class="q-score" id="q-score">✓ 0</span>
+        <span class="q-counter" id="q-counter">1 / 40</span>
+        <span class="q-score" id="q-score">⭐ 0</span>
+        <span class="q-streak" id="q-streak">🔥 0</span>
+        <span class="q-timer" id="q-timer">20:00</span>
       </div>
+
       <div class="progress-bar">
         <div class="progress-fill" id="progress-fill" style="width:0%"></div>
       </div>
@@ -140,10 +183,35 @@
         <p class="q-text" id="q-text"></p>
         <ul class="opts-list" id="opts-list"></ul>
         <div class="feedback-box" id="feedback-box"></div>
-        <button class="next-btn" id="next-btn" onclick="nextQuestion()">Siguiente →</button>
+
+      <div class="nav-buttons">
+        <button class="prev-btn" id="prev-btn" onclick="prevQuestion()">← Anterior</button>
+        <button class="skip-btn" id="skip-btn" onclick="skipQuestion()">⏭ Saltar</button>
+        <button class="next-btn" id="next-btn" onclick="nextQuestion()" disabled>Siguiente →</button>
       </div>
+
+<hr class="exam-nav-divider">
+
+<div class="exam-nav">
+    <h3>NAVEGACIÓN DEL EXAMEN</h3>
+
+    <div id="exam-grid" class="exam-grid"></div>
+
+    <div class="exam-legend">
+        <span><i class="lg actual"></i> Pregunta actual</span>
+        <span><i class="lg correct"></i> Correcta</span>
+        <span><i class="lg wrong"></i> Incorrecta</span>
+        <span><i class="lg skipped"></i> Saltada</span>
+        <span><i class="lg pending"></i> Sin responder</span>
+    </div>
+</div>
+
+      </div>
+
     </section>
 
+
+    <!-- Pantalla de resultados -->
     <section class="screen" id="screen-results">
       <div class="result-hero">
         <span class="result-emoji" id="result-emoji">🏆</span>
@@ -168,9 +236,12 @@
       <button class="restart-btn" onclick="goMenu()">← Volver al menú</button>
     </section>
 
-    </div>
+  </div>
+</main>
 
-  </main>
+
+
+
 
   <footer id="footer" class="footer light-background">
     <div class="container">
@@ -241,11 +312,8 @@
   </div>
 
 <!-- Vendor Js Files -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEOForGlyywX9HJ09JcYn3nv7wiPVlz7YWyJrWvCX/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-<script src="assets/vendor/php-email-form/validate.js" defer></script>
 <script src="assets/vendor/aos/aos.js" defer></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
 <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
@@ -291,5 +359,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
 </body>
 </html>

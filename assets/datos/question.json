@@ -1,242 +1,897 @@
 [
   {
     "id": 1,
-    "pregunta": "¿Puedo reemplazar el depósito de combustible original de mi vehículo por otro receptáculo?",
-    "opciones": ["Sí, pero sólo temporariamente", "Está absolutamente prohibido"],
-    "correcta": 1
+    "q": "¿Puedo reemplazar el depósito de combustible original de mi vehículo por otro receptáculo?",
+    "opts": [
+      "Sí, pero sólo temporariamente",
+      "Está absolutamente prohibido"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "No se puede reemplazar libremente el depósito de combustible por otro no autorizado. Es una modificación prohibida por seguridad."
   },
   {
     "id": 2,
-    "pregunta": "¿En intersecciones NO semaforizadas puedo girar a la izquierda?",
-    "opciones": ["Sí", "No"],
-    "correcta": 0
+    "q": "¿En intersecciones NO semaforizadas puedo girar a la izquierda?",
+    "opts": [
+      "Sí",
+      "No"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "Sí puede realizarse, siempre que no exista señal de prohibición y respetando prioridad, peatones y condiciones seguras de giro."
   },
   {
     "id": 3,
-    "pregunta": "En un cruce NO SEMAFORIZADO, se produce un accidente en la senda peatonal, marcada o no. ¿Quién se presume responsable?",
-    "opciones": ["Al conductor", "Al conductor si su vehículo circulaba a más de 40km/h", "Al peatón, ya que no cedió el paso al automóvil"],
-    "correcta": 0
+    "q": "En un cruce NO SEMAFORIZADO, se produce un accidente en la senda peatonal. ¿Quién se presume responsable?",
+    "opts": [
+      "El conductor",
+      "El peatón",
+      "Depende de la velocidad del vehículo"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "En cruces no semaforizados, la senda peatonal (marcada o imaginaria) otorga prioridad al peatón. Si ocurre un siniestro allí, se presume responsabilidad del conductor."
   },
   {
     "id": 4,
-    "pregunta": "El triángulo que está pintado en la calzada (pavimento) indica:",
-    "opciones": ["Que circula por una avenida", "La obligación de ceder el paso", "El sentido de circulación de los vehículos"],
-    "correcta": 1
+    "q": "¿Qué debe hacer un conductor al ver un cartel de 'PARE'?",
+    "opts": [
+      "Reducir la velocidad",
+      "Detenerse completamente",
+      "Continuar si no hay tránsito"
+    ],
+    "correct": 1,
+    "cat": "señales",
+    "explicacion": "El cartel de 'PARE' obliga a detenerse completamente antes de continuar, respetando la prioridad de paso."
   },
   {
     "id": 5,
-    "pregunta": "La señal que indica la prohibición absoluta de estacionar y detenerse es:",
-    "opciones": ["Esta opción", "Esta opción"],
-    "correcta": 0
+    "q": "¿Cuál es la velocidad máxima permitida en zonas urbanas?",
+    "opts": [
+      "40 km/h",
+      "60 km/h",
+      "80 km/h"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "La velocidad máxima en zonas urbanas es de 60 km/h, salvo que una señal indique un límite menor."
   },
   {
     "id": 6,
-    "pregunta": "Indique cual es la forma correcta de circular:",
-    "opciones": ["Por cualquier carril y en el sentido de circulación señalizado", "Por sobre la línea blanca discontinua del carril pintado sobre la calzada (pavimento) y en el sentido de circulación señalizado", "Conservando la derecha, por el centro del carril y en el sentido de circulación señalizado"],
-    "correcta": 2
+    "q": "Indique cual es la forma correcta de circular:",
+    "opts": [
+      "Por cualquier carril y en el sentido de circulación señalizado",
+      "Por sobre la línea blanca discontinua del carril pintado sobre la calzada (pavimento) y en el sentido de circulación señalizado",
+      "Conservando la derecha, por el centro del carril y en el sentido de circulación señalizado"
+    ],
+    "correct": 2,
+    "cat": "general",
+    "explicacion": "La forma correcta es circular por la derecha, centrado en el carril y en el sentido indicado por la señalización."
   },
   {
     "id": 7,
-    "pregunta": "En una intersección NO SEMAFORIZADA, la velocidad máxima es:",
-    "opciones": ["30 Km/h", "40 Km/h", "60 Km/h"],
-    "correcta": 0
+    "q": "En una intersección NO SEMAFORIZADA, la velocidad máxima es:",
+    "opts": ["30 Km/h","40 Km/h","60 Km/h"],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En intersecciones no semaforizadas la velocidad máxima es 30 km/h para poder reaccionar y ceder el paso con seguridad."
   },
   {
     "id": 8,
-    "pregunta": "El límite máximo de velocidad establecido en vías con semáforos coordinados es:",
-    "opciones": ["40km/h", "60km/h", "Velocidad de la onda verde"],
-    "correcta": 2
+    "q": "El límite máximo de velocidad establecido en vías con semáforos coordinados es:",
+    "opts": ["40 km/h","60 km/h","Velocidad de la onda verde"],
+    "correct": 2,
+    "cat": "general",
+    "explicacion": "En vías con semáforos coordinados, la velocidad de onda verde es la referencia máxima para pasar cruces en sincronía sin generar riesgos."
   },
   {
     "id": 9,
-    "pregunta": "¿Si un vehículo nos quiere adelantar, qué indicación debo realizar para anunciarle que puede hacerlo sin riesgo, ya que la vía se encuentra libre?",
-    "opciones": ["Luz de baliza", "Luz de giro derecha", "Ninguna indicación"],
-    "correcta": 1
+    "q": "¿Si un vehículo nos quiere adelantar, qué indicación debo realizar para anunciarle que puede hacerlo sin riesgo, ya que la vía se encuentra libre?",
+    "opts": ["Luz de baliza","Luz de giro derecha","Ninguna indicación"],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "El guiño derecho se usa para indicar que la vía está libre y el sobrepaso puede realizarse con seguridad."
   },
   {
     "id": 10,
-    "pregunta": "¿Cómo debe estacionar en una calle con pendiente?",
-    "opciones": ["Con las ruedas transversales al cordón de la acera (vereda) y el freno de mano colocado", "Colocando el freno de mano", "Con las ruedas transversales al cordón de la acera (vereda)"],
-    "correcta": 0
+    "q": "¿Cómo debe estacionar en una calle con pendiente?",
+    "opts": [
+      "Con las ruedas transversales al cordón de la acera (vereda) y el freno de mano colocado",
+      "Colocando el freno de mano",
+      "Con las ruedas transversales al cordón de la acera (vereda)"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En pendientes, además del freno de mano, se colocan las ruedas transversales orientadas hacia el cordón para que el auto no gane movimiento si falla el freno."
   },
   {
     "id": 11,
-    "pregunta": "¿Si Ud. conduce un vehículo sin limpiaparabrisas, puede ser sancionado por la autoridad de control?",
-    "opciones": ["Sí", "No", "Sí, siempre que en el momento del control las condiciones climáticas sean adversas (lluvia, llovizna)"],
-    "correcta": 0
+    "q": "¿Si Ud. conduce un vehículo sin limpiaparabrisas, puede ser sancionado por la autoridad de control?",
+    "opts": ["Sí","No","Sí, siempre que en el momento del control las condiciones climáticas sean adversas (lluvia, llovizna)"],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "Sí. Circular sin limpiaparabrisas en condiciones reglamentarias afecta la visibilidad y constituye infracción."
   },
   {
     "id": 12,
-    "pregunta": "¿En una intersección no regulada por señales, ni semáforos, ni agente de tránsito, qué vehículo tiene prioridad de paso?",
-    "opciones": ["El amarillo", "El rojo", "Es indistinto"],
-    "correcta": 1
+    "q": "¿En una intersección no regulada por señales, ni semáforos, ni agente de tránsito, qué vehículo tiene prioridad de paso?",
+    "opts": ["El amarillo","El rojo","Es indistinto"],
+    "correct": 0,
+    "cat": "señales",
+    "image": "assets/img/interseccion_prioridad.png",
+    "explicacion": "En intersecciones no reguladas rige la prioridad de quien viene por la derecha. En la imagen, para el vehículo amarillo, el rojo aparece por su derecha."
   },
   {
     "id": 13,
-    "pregunta": "¿Por qué lugar y en qué sentido deberá caminar el peatón en las zonas donde no hay vereda?",
-    "opciones": ["Fuera de la calzada (pavimento), en el sentido contrario a la circulación vehicular", "Fuera de la calzada, en el mismo sentido de la circulación vehicular", "Sobre la calzada (pavimento), en el mismo sentido de la circulación vehicular"],
-    "correcta": 0
+    "q": "¿Por qué lugar y en qué sentido deberá caminar el peatón en las zonas donde no hay vereda?",
+    "opts": [
+      "Fuera de la calzada (pavimento), en el sentido contrario a la circulación vehicular",
+      "Fuera de la calzada, en el mismo sentido de la circulación vehicular",
+      "Sobre la calzada (pavimento), en el mismo sentido de la circulación vehicular"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "Si no hay vereda, el peatón debe caminar fuera de la calzada y en sentido contrario al tránsito para ver venir los vehículos y reaccionar a tiempo."
   },
   {
     "id": 14,
-    "pregunta": "¿En qué casos la autoridad de control puede retener su licencia de conducir?",
-    "opciones": ["Por conducir alcoholizado", "Por carecer el vehículo de ambas chapas patentes", "Por cruzar un semáforo en rojo"],
-    "correcta": 0
+    "q": "¿En qué casos la autoridad de control puede retener su licencia de conducir?",
+    "opts": ["Por conducir alcoholizado","Por carecer el vehículo de ambas chapas patentes","Por cruzar un semáforo en rojo"],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "Conducir alcoholizado habilita a la autoridad a retener la licencia por tratarse de una infracción grave de seguridad vial."
   },
   {
     "id": 15,
-    "pregunta": "¿En una intersección (esquina) semaforizada con luz roja a su frente, ante la indicación del agente de tránsito de avanzar, Ud. qué hace?",
-    "opciones": ["Detenerme, ya que el semáforo está en rojo", "Obedecer al agente de tránsito ya que sus órdenes prevalecen sobre las normas"],
-    "correcta": 1
+    "q": "¿En una intersección semaforizada con luz roja a su frente, ante la indicación del agente de tránsito de avanzar, Ud. qué hace?",
+    "opts": ["Detenerme, ya que el semáforo está en rojo","Obedecer al agente de tránsito ya que sus órdenes prevalecen sobre las normas"],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "Si un agente dirige el tránsito, su orden inmediata prevalece sobre la luz del semáforo. En ese caso debés avanzar sólo como lo indique el inspector y con precaución."
   },
   {
     "id": 16,
-    "pregunta": "El uso del cinturón de seguridad es obligatorio para:",
-    "opciones": ["El conductor y acompañante", "Todos los ocupantes del vehículo en movimiento", "El conductor"],
-    "correcta": 1
+    "q": "El uso del cinturón de seguridad es obligatorio para:",
+    "opts": ["El conductor y acompañante","Todos los ocupantes del vehículo en movimiento","El conductor"],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "El cinturón de seguridad es obligatorio para todos los ocupantes, adelante y atrás. Su uso correcto reduce lesiones graves y evita proyecciones en frenadas o choques."
   },
   {
     "id": 17,
-    "pregunta": "Ud. conductor de automóvil particular, radicado en la Ciudad de Córdoba, tiene la obligación de realizar la Inspección Técnica Vehicular (I.T.V.):",
-    "opciones": ["Si el vehículo tiene una antigüedad mayor a 3 años y renovarla semestralmente", "Si el vehículo tiene una antigüedad mayor a dos años y renovarla anualmente", "Si el vehículo tiene una antigüedad mayor a 2 años y renovarla semestralmente"],
-    "correcta": 1
+    "q": "Ud. conductor de automóvil particular, radicado en la Ciudad de Córdoba, tiene la obligación de realizar la Inspección Técnica Vehicular (I.T.V.):",
+    "opts": [
+      "Si el vehículo tiene una antigüedad mayor a 3 años y renovarla semestralmente",
+      "Si el vehículo tiene una antigüedad mayor a dos años y renovarla anualmente",
+      "Si el vehículo tiene una antigüedad mayor a 2 años y renovarla semestralmente"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "En Córdoba, los automóviles particulares con más de dos años de antigüedad deben realizar ITV y renovarla anualmente."
   },
   {
     "id": 18,
-    "pregunta": "La banda de detención que es la línea transversal ancha marcada sobre la calzada indica:",
-    "opciones": ["La obligación de detener el vehículo antes de esta línea", "Indica separación de carriles", "El cruce peatonal"],
-    "correcta": 0
+    "q": "La banda de detención que es la línea transversal ancha marcada sobre la calzada indica:",
+    "opts": ["La obligación de detener el vehículo antes de esta línea","Indica separación de carriles","El cruce peatonal"],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La banda de detención marca el punto donde debe detenerse completamente el vehículo antes de avanzar, por ejemplo en un PARE o semáforo."
   },
   {
     "id": 19,
-    "pregunta": "¿Qué debe hacer un conductor, antes de llegar a una intersección (esquina), si desea girar a la izquierda o a la derecha?",
-    "opciones": ["Advertir la maniobra con la luz de giro correspondiente, conduciendo el vehículo hacia el carril por el que pretende girar con una antelación de 10m", "Advertir la maniobra con la luz de giro correspondiente, conduciendo el vehículo hacia el carril por el que pretende girar con una antelación de 30 m", "Advertir la maniobra con la luz de giro correspondiente, conduciendo el vehículo hacia el carril por el que pretende girar con una antelación de 20 m"],
-    "correcta": 1
+    "q": "¿Qué debe hacer un conductor, antes de llegar a una intersección, si desea girar a la izquierda o a la derecha?",
+    "opts": [
+      "Advertir la maniobra con la luz de giro correspondiente, conduciendo el vehículo hacia el carril por el que pretende girar con una antelación de 10m",
+      "Advertir la maniobra con la luz de giro correspondiente, conduciendo el vehículo hacia el carril por el que pretende girar con una antelación de 30 m",
+      "Advertir la maniobra con la luz de giro correspondiente, conduciendo el vehículo hacia el carril por el que pretende girar con una antelación de 20 m"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "Antes de girar debés señalizar con luz de giro y posicionarte en el carril correspondiente con antelación suficiente (aprox. 30 m)."
   },
+ 
   {
     "id": 20,
-    "pregunta": "Ante la avería (rotura) de mi vehículo, en caso de fuerza mayor, ¿puedo ser remolcado por otro, utilizando una cadena o soga?",
-    "opciones": ["Sí, a los efectos de dejar la vía libre", "No, solamente puedo ser remolcado utilizando elementos rígidos de acople (lanza)"],
-    "correcta": 1
+    "q": "Ante la avería (rotura) de mi vehículo, en caso de fuerza mayor, ¿puedo ser remolcado por otro, utilizando una cadena o soga?",
+    "opts": [
+      "Sí, a los efectos de dejar la vía libre",
+      "No, solamente puedo ser remolcado utilizando elementos rígidos de acople (lanza)"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "El remolque con cadena o soga no es la forma reglamentaria para circular. Debe hacerse con acople rígido (lanza) y bajo condiciones de seguridad."
   },
   {
     "id": 21,
-    "pregunta": "¿Después de realizar un adelantamiento, tiene Ud. conductor la obligación de advertir con el guiño correspondiente la maniobra de retorno hacia el carril derecho?",
-    "opciones": ["Sólo en horario nocturno", "Sí, siempre que se modifica la trayectoria de un vehículo es obligación colocar el guiño", "No es obligatorio el uso del guiño para indicar esta maniobra"],
-    "correcta": 1
+    "q": "¿Después de realizar un adelantamiento, tiene Ud. conductor la obligación de advertir con el guiño correspondiente la maniobra de retorno hacia el carril derecho?",
+    "opts": [
+      "Sólo en horario nocturno",
+      "Sí, siempre que se modifica la trayectoria de un vehículo es obligación colocar el guiño",
+      "No es obligatorio el uso del guiño para indicar esta maniobra"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "Al regresar al carril derecho después de un adelantamiento, corresponde señalizar con guiño porque toda modificación de trayectoria debe advertirse al resto del tránsito."
   },
   {
     "id": 22,
-    "pregunta": "Las señales informativas advierten al conductor sobre un posible riesgo en el camino:",
-    "opciones": ["Falso", "Verdadero"],
-    "correcta": 0
+    "q": "Las señales informativas advierten al conductor sobre un posible riesgo en el camino:",
+    "opts": ["Falso","Verdadero"],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "Las señales informativas orientan, guían y brindan datos útiles (destinos, servicios, ubicación), pero no son señales de advertencia de riesgo."
   },
   {
     "id": 23,
-    "pregunta": "Ante un control vehicular, si los neumáticos de mi vehículo no poseen el dibujo visible de las bandas de rodamiento, ¿puede ser trasladado con la grúa municipal sacándolo de circulación?",
-    "opciones": ["No, ya que estoy circulando por vías urbanas", "No", "Sí, porque constituye falta de seguridad activa"],
-    "correcta": 2
+    "q": "Ante un control vehicular, si los neumáticos de mi vehículo no poseen el dibujo visible de las bandas de rodamiento, ¿puede ser trasladado con la grúa municipal sacándolo de circulación?",
+    "opts": [
+      "No, ya que estoy circulando por vías urbanas",
+      "No",
+      "Sí, porque constituye falta de seguridad activa"
+    ],
+    "correct": 2,
+    "cat": "general",
+    "explicacion": "Neumáticos sin dibujo visible reducen adherencia y frenado, especialmente en mojado. Por seguridad activa, puede disponerse la remoción del vehículo."
   },
   {
     "id": 24,
-    "pregunta": "¿En una circulación giratoria (rotonda) quién tiene prioridad de paso?",
-    "opciones": ["El vehículo que ingresa (entra) a la rotonda, ya que tiene prioridad de paso de mano derecha", "El vehículo que egresa (sale) de la rotonda"],
-    "correcta": 1
+    "q": "¿En una circulación giratoria (rotonda) quién tiene prioridad de paso?",
+    "opts": [
+      "El vehículo que ingresa (entra) a la rotonda, ya que tiene prioridad de paso de mano derecha",
+      "El vehículo que egresa (sale) de la rotonda"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "Según el criterio evaluado en esta consigna, la prioridad corresponde al vehículo que egresa de la rotonda. Debés ajustar tu maniobra para no interferir su salida."
   },
   {
     "id": 25,
-    "pregunta": "Indique cuál es la forma correcta de cruzar la calzada (pavimento) como peatón:",
-    "opciones": ["A mitad de cuadra", "Por cualquier lugar de la calzada (pavimento), si no circulan vehículos", "Cuando no exista demarcación peatonal, por la prolongación imaginaria de la acera (vereda)"],
-    "correcta": 2
+    "q": "Indique cuál es la forma correcta de cruzar la calzada (pavimento) como peatón:",
+    "opts": [
+      "A mitad de cuadra",
+      "Por cualquier lugar de la calzada (pavimento), si no circulan vehículos",
+      "Cuando no exista demarcación peatonal, por la prolongación imaginaria de la acera (vereda)"
+    ],
+    "correct": 2,
+    "cat": "general",
+    "explicacion": "Si no hay senda marcada, el cruce peatonal correcto se realiza por la prolongación imaginaria de las veredas en la esquina, no por mitad de cuadra."
   },
   {
     "id": 26,
-    "pregunta": "¿Cuál es el índice máximo permitido de alcohol (en aire expirado) para un conductor de motovehículo en la Ciudad de Córdoba?",
-    "opciones": ["0,4 gr/l", "0,2 gr/l", "0,0 gr/l"],
-    "correcta": 2
+    "q": "¿Cuál es el índice máximo permitido de alcohol (en aire expirado) para un conductor de motovehículo en la Ciudad de Córdoba?",
+    "opts": ["0,4 gr/l","0,2 gr/l","0,0 gr/l"],
+    "correct": 2,
+    "cat": "moto",
+    "explicacion": "En Córdoba, para motovehículos rige tolerancia cero: el máximo permitido es 0,0 g/l. Cualquier presencia de alcohol implica infracción por el alto nivel de exposición al riesgo."
   },
   {
     "id": 27,
-    "pregunta": "¿Está permitido en un congestionamiento vehicular adelantarse por la banquina?",
-    "opciones": ["No", "Sí"],
-    "correcta": 0
+    "q": "¿Está permitido en un congestionamiento vehicular adelantarse por la banquina?",
+    "opts": ["No","Sí"],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "La banquina no es un carril de sobrepaso. Adelantar por ese sector está prohibido porque aumenta el riesgo de pérdida de control y colisiones laterales."
   },
   {
     "id": 28,
-    "pregunta": "Está permitido circular marcha atrás para:",
-    "opciones": ["Maniobras propias de estacionamiento", "Girar en 'U'", "Retomar otra calzada"],
-    "correcta": 0
+    "q": "Está permitido circular marcha atrás para:",
+    "opts": [
+      "Maniobras propias de estacionamiento",
+      "Girar en 'U'",
+      "Retomar otra calzada"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "La marcha atrás sólo se autoriza para maniobras puntuales de estacionamiento; no para circular normalmente ni para cambiar de sentido."
   },
   {
     "id": 29,
-    "pregunta": "¿En una vía de más de dos carriles de igual sentido de circulación, puedo efectuar el adelantamiento con maniobras zigzagueantes?",
-    "opciones": ["Sí, siempre que esté atento a los riesgos del tránsito", "No, los movimientos zigzagueantes están prohibidos", "Sí, ya que es una vía multicarril"],
-    "correcta": 1
+    "q": "¿En una vía de más de dos carriles de igual sentido de circulación, puedo efectuar el adelantamiento con maniobras zigzagueantes?",
+    "opts": [
+      "Sí, siempre que esté atento a los riesgos del tránsito",
+      "No, los movimientos zigzagueantes están prohibidos",
+      "Sí, ya que es una vía multicarril"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "En vías multicarril está prohibido zigzaguear para adelantar. Esa maniobra incrementa puntos ciegos y el riesgo de choque lateral."
   },
   {
     "id": 30,
-    "pregunta": "En una intersección semaforizada con luz intermitente roja, que advierte la presencia de cruce peligroso, debo efectuar el cruce:",
-    "opciones": ["Detener la marcha y sólo reiniciarla cuando observe que no existe riesgo alguno", "A mínima velocidad y máxima precaución", "A la misma velocidad con que circulaba"],
-    "correcta": 0
+    "q": "En una intersección semaforizada con luz intermitente roja, que advierte la presencia de cruce peligroso, debo efectuar el cruce:",
+    "opts": [
+      "Detener la marcha y sólo reiniciarla cuando observe que no existe riesgo alguno",
+      "A mínima velocidad y máxima precaución",
+      "A la misma velocidad con que circulaba"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "En cruces semaforizados debés respetar estrictamente la indicación luminosa aplicable a tu carril y maniobra."
   },
   {
     "id": 31,
-    "pregunta": "Circulando con el certificado de I.T.V. aprobado, ante un control vehicular se comprueba que mi vehículo excede los niveles de humo y gases tóxicos admitidos, mi vehículo puede:",
-    "opciones": ["No ser sometido a control, ya que poseo certificado de ITV aprobado", "Ser trasladado con la grúa municipal sacándolo de circulación ya que está en infracción y el certificado de ITV aprobado es al momento de la Inspección, después de la misma debo conservar el buen estado de mi vehículo", "Ser sometido a control, pero no ser sancionado ya que poseo certificado de ITV aprobado"],
-    "correcta": 1
+    "q": "Circulando con el certificado de I.T.V. aprobado, ante un control vehicular se comprueba que mi vehículo excede los niveles de humo y gases tóxicos admitidos, mi vehículo puede:",
+    "opts": [
+      "No ser sometido a control, ya que poseo certificado de ITV aprobado",
+      "Ser trasladado con la grúa municipal sacándolo de circulación ya que está en infracción y el certificado de ITV aprobado es al momento de la Inspección, después de la misma debo conservar el buen estado de mi vehículo",
+      "Ser sometido a control, pero no ser sancionado ya que poseo certificado de ITV aprobado"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "La ITV aprobada acredita estado al momento de inspección, pero no exime controles posteriores. Si luego el vehículo contamina fuera de límite, puede ser removido."
   },
   {
     "id": 32,
-    "pregunta": "¿El uso de la bocina está permitido?",
-    "opciones": ["Siempre, al llegar a una intersección", "Sólo en caso de peligro", "Siempre"],
-    "correcta": 1
+    "q": "¿El uso de la bocina está permitido?",
+    "opts": [
+      "Siempre, al llegar a una intersección",
+      "Sólo en caso de peligro",
+      "Siempre"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "La bocina es un recurso de seguridad para prevenir un peligro inminente. Su uso habitual para apurar, saludar o reclamar paso está prohibido."
   },
   {
     "id": 33,
-    "pregunta": "¿Se puede circular con un vehículo sobre las líneas pintadas en el pavimento que separan carriles?",
-    "opciones": ["Sí", "No"],
-    "correcta": 1
+    "q": "¿Se puede circular con un vehículo sobre las líneas pintadas en el pavimento que separan carriles?",
+    "opts": ["Sí","No"],
+    "correct": 1,
+    "cat": "señales",
+    "explicacion": "No se debe circular sobre las líneas divisorias de carril. Esas marcas delimitan trayectorias y pisarlas sostenidamente desordena la circulación."
   },
   {
     "id": 34,
-    "pregunta": "¿Si Ud. consume medicamentos que alteran sus facultades físicas y/o síquicas (sueño, cansancio, alteración visual, etc.), puede conducir?",
-    "opciones": ["Está prohibido absolutamente, y como soy un conductor responsable no conduzco aunque sepa que no voy a ser controlado", "Sí, ya estoy acostumbrado al consumo", "Sí conduzco, pero nunca de noche"],
-    "correcta": 0
+    "q": "¿Si Ud. consume medicamentos que alteran sus facultades físicas y/o síquicas (sueño, cansancio, alteración visual, etc.), puede conducir?",
+    "opts": [
+      "Está prohibido absolutamente, y como soy un conductor responsable no conduzco aunque sepa que no voy a ser controlado",
+      "Sí, ya estoy acostumbrado al consumo",
+      "Sí conduzco, pero nunca de noche"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "Si un medicamento provoca sueño, lentitud de reacción o alteración visual, no debés conducir. Manejar en esas condiciones está prohibido porque compromete el control del vehículo aunque te sientas acostumbrado."
   },
   {
     "id": 35,
-    "pregunta": "¿En intersecciones (bocacalles) semaforizadas debe avanzar con luz verde a su frente, si del otro lado de la intersección hay un embotellamiento de tránsito?",
-    "opciones": ["Sí", "No", "Es indiferente"],
-    "correcta": 1
+    "q": "¿En intersecciones semaforizadas debe avanzar con luz verde a su frente, si del otro lado de la intersección hay un embotellamiento de tránsito?",
+    "opts": ["Sí","No","Es indiferente"],
+    "correct": 1,
+    "cat": "señales",
+    "explicacion": "No. Aunque tengas verde, no debés avanzar si la salida de la intersección está bloqueada, para no obstruir el cruce."
   },
   {
     "id": 36,
-    "pregunta": "Está atravesando un cruce de avenidas sin semáforos a 30 Km/h. Ud. está:",
-    "opciones": ["Conduciendo de acuerdo con el reglamento", "Conduciendo demasiado despacio", "Sobrepasando el límite de velocidad"],
-    "correcta": 0
+    "q": "Está atravesando un cruce de avenidas sin semáforos a 30 Km/h. Ud. está:",
+    "opts": [
+      "Conduciendo de acuerdo con el reglamento",
+      "Conduciendo demasiado despacio",
+      "Sobrepasando el límite de velocidad"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "Está correcta: en un cruce de avenidas sin semáforos, circular a 30 km/h se ajusta al límite de seguridad para intersecciones."
   },
   {
     "id": 37,
-    "pregunta": "¿En qué caso de los que se cita está permitido adelantarse?",
-    "opciones": ["En todas las intersecciones (esquinas)", "En los pasos para peatones y sus proximidades, si la velocidad no es superior a 40 Km/h", "En las rotondas"],
-    "correcta": 2
+    "q": "¿En qué caso de los que se cita está permitido adelantarse?",
+    "opts": [
+      "En todas las intersecciones (esquinas)",
+      "En los pasos para peatones y sus proximidades, si la velocidad no es superior a 40 Km/h",
+      "En las rotondas"
+    ],
+    "correct": 2,
+    "cat": "general",
+    "explicacion": "En esta consigna, el adelantamiento se admite en rotondas cuando la circulación es por carriles en el mismo sentido y la maniobra se realiza sin riesgo ni invasiones indebidas."
   },
   {
     "id": 38,
-    "pregunta": "Su vehículo carece de guardabarros. ¿La autoridad de control puede trasladarlo con la grúa municipal sacándolo de circulación?",
-    "opciones": ["No", "Sí", "La autoridad de control puede labrarme acta de infracción, pero no puede impedir que continúe circulando"],
-    "correcta": 1
+    "q": "Su vehículo carece de guardabarros. ¿La autoridad de control puede trasladarlo con la grúa municipal sacándolo de circulación?",
+    "opts": ["No","Sí","La autoridad de control puede labrarme acta de infracción, pero no puede impedir que continúe circulando"],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "Circular sin guardabarros afecta la seguridad y puede proyectar agua, barro o piedras. Es una falta que habilita a sacar el vehículo de circulación."
   },
   {
     "id": 39,
-    "pregunta": "¿En horarios nocturnos, puedo estacionar frente al acceso de una playa de estacionamiento si la misma se encuentra cerrada en ese horario?",
-    "opciones": ["No, ya que está prohibido estacionar frente a accesos de playas de estacionamiento", "Sí, siempre que la playa de estacionamiento no esté funcionando y se encuentre ubicada sobre mano derecha", "Sí, ya que es de noche y verifico que la playa de estacionamiento no funciona"],
-    "correcta": 0
+    "q": "¿En horarios nocturnos, puedo estacionar frente al acceso de una playa de estacionamiento si la misma se encuentra cerrada en ese horario?",
+    "opts": [
+      "No, ya que está prohibido estacionar frente a accesos de playas de estacionamiento",
+      "Sí, siempre que la playa de estacionamiento no esté funcionando y se encuentre ubicada sobre mano derecha",
+      "Sí, ya que es de noche y verifico que la playa de estacionamiento no funciona"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "No se puede estacionar frente al acceso de una playa de estacionamiento aunque esté cerrada, porque el acceso debe permanecer libre."
   },
   {
     "id": 40,
-    "pregunta": "¿Si un vehículo nos quiere adelantar, qué indicación debo realizar para anunciarle que no puede hacerlo, pues se aproxima un vehículo de frente?",
-    "opciones": ["Luz de giro derecha", "Luz de giro izquierda", "Luz de baliza"],
-    "correcta": 1
+    "q": "¿Si un vehículo nos quiere adelantar, qué indicación debo realizar para anunciarle que no puede hacerlo, pues se aproxima un vehículo de frente?",
+    "opts": ["Luz de giro derecha","Luz de giro izquierda","Luz de baliza"],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "Para advertir al que intenta adelantarte que no debe hacerlo por riesgo de frente, corresponde accionar el guiño izquierdo. Es una señal preventiva de maniobra no segura."
+  },
+  {
+    "id": 41,
+    "q": "¿Qué debe hacer un conductor si circula en una zona montañosa con curvas pronunciadas?",
+    "opts": [
+      "Aumentar la velocidad",
+      "Reducir la velocidad y usar marchas bajas",
+      "Circular en punto muerto"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "En zonas montañosas con curvas pronunciadas se debe reducir la velocidad y usar marchas bajas para mantener el control del vehículo."
+  },
+  {
+    "id": 42,
+    "q": "¿Qué significa una señal triangular con borde rojo y un dibujo de un semáforo?",
+    "opts": [
+      "Advertencia de semáforo próximo",
+      "Prohibido semáforos",
+      "Cruce peatonal"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La señal triangular con semáforo advierte la proximidad de una intersección regulada por semáforo."
+  },
+  {
+    "id": 43,
+    "q": "¿Qué debe hacer un conductor si se encuentra con un cartel de 'Contramano'?",
+    "opts": [
+      "Continuar con precaución",
+      "Detenerse y retroceder",
+      "Ignorar la señal"
+    ],
+    "correct": 1,
+    "cat": "señales",
+    "explicacion": "La señal de 'Contramano' indica prohibición absoluta de circular en ese sentido. El conductor debe detenerse y retroceder."
+  },
+  {
+    "id": 44,
+    "q": "¿Cuál es la velocidad máxima permitida para motocicletas en autopistas?",
+    "opts": [
+      "100 km/h",
+      "120 km/h",
+      "130 km/h"
+    ],
+    "correct": 1,
+    "cat": "moto",
+    "explicacion": "Las motocicletas en autopistas tienen una velocidad máxima de 120 km/h, salvo que una señal indique un límite menor."
+  },
+  {
+    "id": 45,
+    "q": "¿Qué significa una señal de tránsito con una 'P' dentro de un círculo azul?",
+    "opts": [
+      "Estacionamiento permitido",
+      "Prohibido estacionar",
+      "Estacionamiento exclusivo para carga"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La señal azul con 'P' indica estacionamiento permitido en el lugar señalado."
+  },
+  {
+    "id": 46,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con hielo en la calzada?",
+    "opts": [
+      "Aumentar la velocidad",
+      "Reducir la velocidad y evitar maniobras bruscas",
+      "Circular en punto muerto"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "En calzadas con hielo se debe reducir la velocidad y evitar maniobras bruscas para prevenir derrapes."
+  },
+  {
+    "id": 47,
+    "q": "¿Qué significa una señal triangular con borde rojo y un dibujo de un auto cayendo al agua?",
+    "opts": [
+      "Zona de estacionamiento",
+      "Advertencia de peligro de caída al agua",
+      "Cruce ferroviario"
+    ],
+    "correct": 1,
+    "cat": "señales",
+    "explicacion": "La señal triangular con auto cayendo al agua advierte peligro de caída en zonas cercanas a ríos, lagos o muelles."
+  },
+  {
+    "id": 48,
+    "q": "¿Qué debe hacer un conductor si circula detrás de un vehículo escolar?",
+    "opts": [
+      "Adelantarlo rápidamente",
+      "Mantener distancia y precaución",
+      "Ignorar la señalización"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "Al circular detrás de un vehículo escolar se debe mantener distancia y precaución, ya que puede detenerse para ascenso o descenso de niños."
+  },
+  {
+    "id": 49,
+    "q": "¿Qué significa una señal de tránsito con un círculo rojo y un número dentro?",
+    "opts": [
+      "Velocidad mínima",
+      "Velocidad máxima permitida",
+      "Número de carriles"
+    ],
+    "correct": 1,
+    "cat": "señales",
+    "explicacion": "La señal circular con número y borde rojo indica la velocidad máxima permitida en ese tramo."
+  },
+  {
+    "id": 50,
+    "q": "¿Qué debe hacer un conductor si circula en una zona rural y se encuentra con animales en la calzada?",
+    "opts": [
+      "Aumentar la velocidad para pasar rápido",
+      "Reducir la velocidad y detenerse si es necesario",
+      "Ignorar a los animales"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "En zonas rurales con animales en la calzada se debe reducir la velocidad y detenerse si es necesario para evitar accidentes."
+  },
+  {
+    "id": 51,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con neblina intensa?",
+    "opts": [
+      "Encender luces bajas y reducir velocidad",
+      "Encender luces altas",
+      "Aumentar la velocidad para salir rápido"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En neblina intensa se debe circular con luces bajas y reducir la velocidad para mantener visibilidad y seguridad."
+  },
+  {
+    "id": 52,
+    "q": "¿Qué significa una señal triangular con borde rojo y un dibujo de un tren?",
+    "opts": [
+      "Cruce ferroviario",
+      "Zona escolar",
+      "Prohibido trenes"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La señal triangular con tren advierte proximidad de cruce ferroviario."
+  },
+  {
+    "id": 53,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con pavimento resbaladizo?",
+    "opts": [
+      "Reducir la velocidad y evitar frenadas bruscas",
+      "Aumentar la velocidad",
+      "Circular en punto muerto"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En calzada resbaladiza se debe reducir la velocidad y evitar maniobras bruscas para prevenir derrapes."
+  },
+  {
+    "id": 54,
+    "q": "¿Qué significa una señal de tránsito con un círculo rojo y un dibujo de dos autos?",
+    "opts": [
+      "Prohibido estacionar",
+      "Prohibido adelantar",
+      "Zona exclusiva para autos"
+    ],
+    "correct": 1,
+    "cat": "señales",
+    "explicacion": "La señal circular con dos autos y barra diagonal indica prohibición de adelantamiento."
+  },
+  {
+    "id": 55,
+    "q": "¿Qué debe hacer un conductor si circula en una avenida con semáforos coordinados?",
+    "opts": [
+      "Respetar la velocidad de onda verde",
+      "Circular a cualquier velocidad",
+      "Detenerse en cada semáforo"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En avenidas con semáforos coordinados se debe respetar la velocidad de onda verde para circular en sincronía."
+  },
+  {
+    "id": 56,
+    "q": "¿Qué significa una señal triangular con borde rojo y un dibujo de piedras cayendo?",
+    "opts": [
+      "Zona de derrumbes",
+      "Zona escolar",
+      "Cruce peatonal"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La señal triangular con piedras cayendo advierte zona de derrumbes."
+  },
+  {
+    "id": 57,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con obras en la vía?",
+    "opts": [
+      "Reducir la velocidad y respetar señalización",
+      "Aumentar la velocidad",
+      "Ignorar las señales"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En zonas con obras se debe reducir la velocidad y respetar la señalización para seguridad de trabajadores y conductores."
+  },
+  {
+    "id": 58,
+    "q": "¿Qué significa una señal de tránsito con un círculo rojo y un dibujo de un camión?",
+    "opts": [
+      "Prohibido el paso de camiones",
+      "Zona exclusiva para camiones",
+      "Advertencia de camiones"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La señal circular con camión y borde rojo indica prohibición de paso de camiones."
+  },
+  {
+    "id": 59,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con cruce peatonal?",
+    "opts": [
+      "Detenerse y ceder el paso a peatones",
+      "Aumentar la velocidad",
+      "Ignorar a los peatones"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En zonas con cruce peatonal se debe detener y ceder el paso a los peatones."
+  },
+  {
+    "id": 60,
+    "q": "¿Qué significa una señal triangular con borde rojo y un dibujo de una bicicleta?",
+    "opts": [
+      "Zona exclusiva para bicicletas",
+      "Advertencia de cruce de ciclistas",
+      "Prohibido bicicletas"
+    ],
+    "correct": 1,
+    "cat": "señales",
+    "explicacion": "La señal triangular con bicicleta advierte proximidad de cruce de ciclistas."
+  },
+  {
+    "id": 61,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con viento fuerte lateral?",
+    "opts": [
+      "Aumentar la velocidad",
+      "Reducir la velocidad y sujetar firmemente el volante",
+      "Circular en punto muerto"
+    ],
+    "correct": 1,
+    "cat": "general",
+    "explicacion": "Con viento lateral fuerte se debe reducir la velocidad y mantener firme el volante para evitar desvíos bruscos."
+  },
+  {
+    "id": 62,
+    "q": "¿Qué significa una señal triangular con borde rojo y un dibujo de un ciclista?",
+    "opts": [
+      "Zona exclusiva para ciclistas",
+      "Advertencia de cruce de ciclistas",
+      "Prohibido bicicletas"
+    ],
+    "correct": 1,
+    "cat": "señales",
+    "explicacion": "La señal triangular con ciclista advierte proximidad de cruce de ciclistas."
+  },
+  {
+    "id": 63,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con pavimento en mal estado?",
+    "opts": [
+      "Reducir la velocidad y extremar precauciones",
+      "Aumentar la velocidad",
+      "Ignorar las condiciones"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En calzadas en mal estado se debe reducir la velocidad y extremar precauciones para evitar daños y accidentes."
+  },
+  {
+    "id": 64,
+    "q": "¿Qué significa una señal de tránsito con un círculo rojo y un dibujo de una moto?",
+    "opts": [
+      "Prohibido el paso de motocicletas",
+      "Zona exclusiva para motos",
+      "Advertencia de motos"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La señal circular con moto y borde rojo indica prohibición de paso de motocicletas."
+  },
+  {
+    "id": 65,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con cruce ferroviario sin barrera?",
+    "opts": [
+      "Detenerse y verificar que no venga el tren",
+      "Pasar rápidamente",
+      "Ignorar la señal"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "En cruces ferroviarios sin barrera se debe detener y verificar que no venga el tren antes de continuar."
+  },
+  {
+    "id": 66,
+    "q": "¿Qué significa una señal triangular con borde rojo y un dibujo de un peatón?",
+    "opts": [
+      "Zona exclusiva para peatones",
+      "Advertencia de cruce peatonal",
+      "Prohibido peatones"
+    ],
+    "correct": 1,
+    "cat": "señales",
+    "explicacion": "La señal triangular con peatón advierte proximidad de cruce peatonal."
+  },
+  {
+    "id": 67,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con animales sueltos?",
+    "opts": [
+      "Reducir la velocidad y detenerse si es necesario",
+      "Aumentar la velocidad para pasar rápido",
+      "Ignorar a los animales"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En zonas con animales sueltos se debe reducir la velocidad y detenerse si es necesario para evitar accidentes."
+  },
+  {
+    "id": 68,
+    "q": "¿Qué significa una señal de tránsito con un círculo rojo y un dibujo de un tractor?",
+    "opts": [
+      "Prohibido el paso de tractores",
+      "Zona exclusiva para tractores",
+      "Advertencia de tractores"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La señal circular con tractor y borde rojo indica prohibición de paso de tractores."
+  },
+  {
+    "id": 69,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con obras y desvíos?",
+    "opts": [
+      "Respetar la señalización y reducir velocidad",
+      "Ignorar las señales",
+      "Aumentar la velocidad"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En zonas con obras y desvíos se debe respetar la señalización y reducir la velocidad para seguridad de todos."
+  },
+  {
+    "id": 70,
+    "q": "¿Qué significa una señal triangular con borde rojo y un dibujo de un auto y una curva?",
+    "opts": [
+      "Advertencia de curva peligrosa",
+      "Zona exclusiva para autos",
+      "Prohibido autos"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La señal triangular con auto y curva advierte proximidad de curva peligrosa."
+  },
+  {
+    "id": 71,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con niebla ligera?",
+    "opts": [
+      "Encender luces bajas y mantener distancia",
+      "Encender luces altas",
+      "Aumentar la velocidad"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En niebla ligera se debe circular con luces bajas y mantener distancia de seguridad para evitar encandilar y conservar visibilidad."
+  },
+  {
+    "id": 72,
+    "q": "¿Qué significa una señal triangular con borde rojo y un dibujo de un puente levadizo?",
+    "opts": [
+      "Advertencia de puente levadizo",
+      "Zona escolar",
+      "Cruce peatonal"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La señal triangular con puente levadizo advierte proximidad de un puente móvil o levadizo."
+  },
+  {
+    "id": 73,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con curvas sucesivas?",
+    "opts": [
+      "Reducir la velocidad y extremar precauciones",
+      "Aumentar la velocidad",
+      "Circular en punto muerto"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En zonas con curvas sucesivas se debe reducir la velocidad y extremar precauciones para mantener el control."
+  },
+  {
+    "id": 74,
+    "q": "¿Qué significa una señal de tránsito con un círculo rojo y un dibujo de un autobús?",
+    "opts": [
+      "Prohibido el paso de autobuses",
+      "Zona exclusiva para autobuses",
+      "Advertencia de autobuses"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La señal circular con autobús y borde rojo indica prohibición de paso de autobuses."
+  },
+  {
+    "id": 75,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con cruce de ciclovía?",
+    "opts": [
+      "Detenerse y ceder el paso a ciclistas",
+      "Aumentar la velocidad",
+      "Ignorar a los ciclistas"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En zonas con ciclovía se debe detener y ceder el paso a los ciclistas."
+  },
+  {
+    "id": 76,
+    "q": "¿Qué significa una señal triangular con borde rojo y un dibujo de un túnel?",
+    "opts": [
+      "Advertencia de túnel",
+      "Zona escolar",
+      "Cruce peatonal"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La señal triangular con túnel advierte proximidad de un túnel."
+  },
+  {
+    "id": 77,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con pavimento en reparación?",
+    "opts": [
+      "Reducir la velocidad y respetar señalización",
+      "Aumentar la velocidad",
+      "Ignorar las señales"
+    ],
+    "correct": 0,
+    "cat": "general",
+    "explicacion": "En zonas con pavimento en reparación se debe reducir la velocidad y respetar la señalización."
+  },
+  {
+    "id": 78,
+    "q": "¿Qué significa una señal de tránsito con un círculo rojo y un dibujo de un tractor agrícola?",
+    "opts": [
+      "Prohibido el paso de tractores agrícolas",
+      "Zona exclusiva para tractores agrícolas",
+      "Advertencia de tractores agrícolas"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La señal circular con tractor agrícola y borde rojo indica prohibición de paso de tractores agrícolas."
+  },
+  {
+    "id": 79,
+    "q": "¿Qué debe hacer un conductor si circula en una zona con paso a nivel con barrera?",
+    "opts": [
+      "Detenerse cuando la barrera esté baja",
+      "Pasar rápidamente",
+      "Ignorar la barrera"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "En pasos a nivel con barrera se debe detener cuando la barrera esté baja y esperar hasta que se levante."
+  },
+  {
+    "id": 80,
+    "q": "¿Qué significa una señal triangular con borde rojo y un dibujo de un avión?",
+    "opts": [
+      "Advertencia de proximidad de aeropuerto",
+      "Zona exclusiva para aviones",
+      "Prohibido aviones"
+    ],
+    "correct": 0,
+    "cat": "señales",
+    "explicacion": "La señal triangular con avión advierte proximidad de aeropuerto o zona de cruce aéreo bajo."
   }
 ]
+
