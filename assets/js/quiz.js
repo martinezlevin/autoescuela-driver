@@ -288,10 +288,19 @@ function startQuiz() {
   let p = PREGUNTAS.filter(CATS[selectedCat].filter);
   p = shuffle(p);
   pool = p.slice(0, 40);
-  current = 0; correctas = 0; resultados = [];
-  racha = 0; // reiniciar racha
+
+  current = 0;
+  correctas = 0;
+  resultados = [];
+  racha = 0;
+
   showScreen("screen-quiz");
   renderQuestion();
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 
   // iniciar timer
   tiempoRestante = 20 * 60;
