@@ -167,8 +167,7 @@
 
   <p class="text-secondary text-center mt-2">Respondé con calma, podés navegar entre preguntas libremente.</p>
 </div>
-
-    </section>
+</section>
 
     <!-- Pantalla de examen -->
     <section class="screen" id="screen-quiz">
@@ -191,9 +190,17 @@
         <div class="feedback-box" id="feedback-box"></div>
 
       <div class="nav-buttons">
-        <button class="prev-btn" id="prev-btn" onclick="prevQuestion()">← Anterior</button>
-        <button class="skip-btn" id="skip-btn" onclick="skipQuestion()">⏭ Saltar</button>
-        <button class="next-btn" id="next-btn" onclick="nextQuestion()" disabled>Siguiente →</button>
+        <button class="prev-btn" id="prev-btn" onclick="prevQuestion()">
+            <i class="bi bi-arrow-left-circle"></i> Anterior
+        </button>
+
+        <button class="skip-btn" id="skip-btn" onclick="skipQuestion()">
+            <i class="bi bi-skip-forward-circle"></i> Saltar
+        </button>
+
+        <button class="next-btn" id="next-btn" onclick="nextQuestion()" disabled>
+            Siguiente <i class="bi bi-arrow-right-circle"></i>
+        </button>
       </div>
 
 <hr class="exam-nav-divider">

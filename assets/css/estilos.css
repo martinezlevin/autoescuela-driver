@@ -2796,36 +2796,68 @@ main {
     color: var(--text);
   }
 
-  .opts-list {
+.opts-list {
     list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 24px;
-  }
+}
 
-  .opt-btn {
+.opts-list li {
+    display: flex;
+    justify-content: center;
+}
+
+.opt-btn {
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
     display: flex;
     align-items: flex-start;
     gap: 14px;
+
     padding: 16px 18px;
+
     background: var(--surface);
     border: 1.5px solid var(--border);
     border-radius: var(--radius);
+
     cursor: pointer;
+
     text-align: left;
+
     color: var(--text);
     font-family: 'Barlow', sans-serif;
     font-size: 0.97rem;
     line-height: 1.45;
-    transition: border-color .13s, background .13s, transform .1s;
-  }
-  .opt-btn:hover:not(:disabled) {
+
+    transition:
+        border-color .2s ease,
+        background .2s ease,
+        box-shadow .25s ease,
+        filter .25s ease;
+}
+
+.opt-btn span:last-child {
+    flex: 1;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.opt-btn:hover:not(:disabled) {
     border-color: var(--accent2);
     background: var(--surface2);
-    transform: translateX(4px);
-  }
+    box-shadow:
+        0 0 10px rgba(0,212,255,.18),
+        0 0 22px rgba(0,212,255,.08);
+    filter: brightness(1.03);
+}
+
   .opt-btn:disabled { cursor: default; }
   .opt-btn.correct {
     border-color: var(--success);
@@ -3151,7 +3183,7 @@ main {
 
 .exam-grid{
     display:grid;
-    grid-template-columns:repeat(10,48px);
+    grid-template-columns:repeat(auto-fit,minmax(42px,48px));
     gap:8px;
     justify-content:center;
 }
@@ -3230,3 +3262,29 @@ main {
 .lg.wrong{background:#ea5455;}
 .lg.skipped{background:#ff9f43;}
 .lg.pending{background:#555;}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .prev-btn,
+  .skip-btn,
+  .next-btn {
+    width: 100%;
+    flex: none;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+}
+
+.opt-btn > *:last-child{
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}

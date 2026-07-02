@@ -108,9 +108,9 @@ function renderQuestion() {
   // botones navegación
   const nb = document.getElementById("next-btn");
   nb.className = "next-btn show";
-  nb.textContent = current === pool.length - 1
-      ? "Ver resultados →"
-      : "Siguiente →";
+  nb.innerHTML = current === pool.length - 1
+      ? 'Ver resultados <i class="bi bi-arrow-right-circle"></i>'
+      : 'Siguiente <i class="bi bi-arrow-right-circle"></i>';
 
   nb.disabled = true;
 
@@ -376,9 +376,9 @@ function answer(idx, btn, p) {
 
   const nb = document.getElementById("next-btn");
   nb.className = "next-btn show";
-  nb.textContent = current === pool.length - 1
-      ? "Ver resultados →"
-      : "Siguiente →";
+  nb.innerHTML = current === pool.length - 1
+      ? 'Ver resultados <i class="bi bi-arrow-right-circle"></i>'
+      : 'Siguiente <i class="bi bi-arrow-right-circle"></i>';
 
   nb.disabled = false;
 }
