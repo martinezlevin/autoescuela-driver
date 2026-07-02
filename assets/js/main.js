@@ -55,26 +55,24 @@
 /**
  * Preloader
  */
-document.addEventListener('DOMContentLoaded', () => {
-  const preloader = document.querySelector('#preloader');
+const preloader = document.querySelector('#preloader');
 
-  // Revisamos si ya se mostró antes
+if (preloader) {
   const preloaderShown = localStorage.getItem('preloaderShown');
 
-  if (preloader && !preloaderShown) {
-    // Primera visita → mostramos y luego lo removemos
+  if (!preloaderShown) {
     window.addEventListener('load', () => {
-      preloader.remove();
-      // Guardamos flag para que no se muestre más
-      localStorage.setItem('preloaderShown', 'true');
+      preloader.classList.add('hide');
+
+      setTimeout(() => {
+        preloader.remove();
+        localStorage.setItem('preloaderShown', 'true');
+      }, 500);
     });
-  } else if (preloader) {
-    // Si ya se mostró antes → lo quitamos inmediatamente
+  } else {
     preloader.remove();
   }
-});
-
-
+}
   /**
    * Scroll top button
    */
