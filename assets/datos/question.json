@@ -116,10 +116,10 @@
   {
     "id": 12,
     "q": "¿En una intersección no regulada por señales, ni semáforos, ni agente de tránsito, qué vehículo tiene prioridad de paso?",
-    "opts": ["El amarillo","El rojo","Es indistinto"],
+    "opts": ["El rojo","El amarillo","Es indistinto"],
     "correct": 0,
     "cat": "señales",
-    "image": "assets/img/interseccion_prioridad.png",
+    "image": "assets/img/quiz/interseccion_prioridad.png",
     "explicacion": "En intersecciones no reguladas rige la prioridad de quien viene por la derecha. En la imagen, para el vehículo amarillo, el rojo aparece por su derecha."
   },
   {
@@ -892,6 +892,133 @@
     "correct": 0,
     "cat": "señales",
     "explicacion": "La señal triangular con avión advierte proximidad de aeropuerto o zona de cruce aéreo bajo."
-  }
+  },
+  {
+  "id": 81,
+  "q": "En esta intersección Ud. conduce el auto rojo, debe:",
+  "opts": [
+    "Detenerse obligatoriamente y ceder el paso a todos los vehículos (autos amarillo y verde).",
+    "Detenerse sólo para cederle el paso al auto amarillo."
+  ],
+  "correct": 0,
+  "cat": "señales",
+  "image": "assets/img/quiz/stop-esquina.png",
+  "explicacion": "Al conducir el vehículo rojo, debe detenerse obligatoriamente y ceder el paso a todos los vehículos que tienen prioridad de circulación en la intersección. Por lo tanto, corresponde permitir el paso tanto del vehículo amarillo como del vehículo verde antes de continuar la marcha."
+},
+{
+  "id": 82,
+  "q": "¿Ante esta señal cuál es la conducta a seguir?",
+  "opts": [
+    "Detener el vehículo en forma total.",
+    "Disminuir la marcha para observar el tránsito.",
+    "Continuar la marcha."
+  ],
+  "correct": 0,
+  "cat": "señales",
+  "image": "assets/img/quiz/pare.png",
+  "explicacion": "La señal PARE obliga a detener completamente el vehículo antes de continuar la marcha. No es suficiente disminuir la velocidad; el conductor debe realizar una detención total, verificar que puede avanzar con seguridad y luego reanudar la circulación."
+},
+{
+  "id": 83,
+  "q": "El triángulo que está pintado en la calzada (pavimento) indica:",
+  "opts": [
+    "El sentido de circulación de los vehículos.",
+    "Que circula por una avenida.",
+    "La obligación de ceder el paso."
+  ],
+  "correct": 2,
+  "cat": "señales",
+  "image": "assets/img/quiz/triangulo_pavimento.png",
+  "explicacion": "El triángulo pintado sobre la calzada es una marca vial que indica la obligación de ceder el paso. El conductor debe reducir la velocidad y permitir el avance de los vehículos que tienen prioridad antes de ingresar a la intersección o sector señalizado."
+},
+{
+  "id": 84,
+  "q": "¿En la situación graficada, tratándose de un cruce NO semaforizado, quién tiene prioridad de paso?",
+  "opts": [
+    "El vehículo, porque siempre tiene prioridad en la calzada.",
+    "El peatón, ya que tiene intención de cruzar por la senda peatonal.",
+    "Es indiferente, ya que el vehículo puede pasar sorteando al peatón."
+  ],
+  "correct": 1,
+  "cat": "señales",
+  "image": "assets/img/quiz/peaton_senda_no_semaforizada.png",
+  "explicacion": "En los cruces no semaforizados, los peatones tienen prioridad de paso cuando cruzan o manifiestan claramente su intención de hacerlo por la senda peatonal. El conductor debe reducir la velocidad y cederles el paso para garantizar una circulación segura."
+},
+{
+  "id": 85,
+  "q": "¿En la situación graficada, el vehículo celeste circula correctamente?",
+  "opts": [
+    "Sí, puede circular por cualquier carril, ya que los dos son del mismo sentido.",
+    "Sí, es por donde debe circular para dejar el carril derecho a los más lentos.",
+    "No, porque debe circular por el carril derecho y utilizar el izquierdo sólo para efectuar el adelantamiento."
+  ],
+  "correct": 2,
+  "cat": "señales",
+  "image": "assets/img/quiz/carril_adelantamiento.png",
+  "explicacion": "En vías con varios carriles de circulación en el mismo sentido, se debe transitar normalmente por el carril derecho. El carril izquierdo está destinado principalmente a realizar adelantamientos o maniobras excepcionales, por lo que no debe utilizarse de manera permanente."
+},
+{
+  "id": 86,
+  "q": "¿En la situación graficada, puede adelantar el automóvil al ómnibus?",
+  "opts": [
+    "Sí, porque el ómnibus es muy voluminoso y nos protege de otros vehículos.",
+    "No, porque en intersecciones está prohibido el adelantamiento.",
+    "Sí, pero dejando suficiente espacio lateral al adelantar."
+  ],
+  "correct": 1,
+  "cat": "señales",
+  "image": "assets/img/quiz/adelantamiento_interseccion.png",
+  "explicacion": "No está permitido adelantar en una intersección, salvo excepciones expresamente contempladas por la normativa. Esta prohibición existe porque los cruces presentan un riesgo elevado de conflicto con otros vehículos, peatones y maniobras de giro."
+},
+{
+  "id": 87,
+  "q": "¿En esta situación, qué debe hacer Ud. que conduce el auto rojo?",
+  "opts": [
+    "Ceder el paso solamente al vehículo que se presenta por la derecha.",
+    "Detenerme y ceder el paso a ambos vehículos.",
+    "Ceder el paso al vehículo que se presenta por la izquierda."
+  ],
+  "correct": 1,
+  "cat": "señales",
+  "image": "assets/img/quiz/interseccion_auto_rojo_87.png",
+  "explicacion": "En la situación representada, el conductor del vehículo rojo debe detenerse y ceder el paso a ambos vehículos antes de continuar. La prioridad de paso debe respetarse de acuerdo con la señalización y las condiciones de circulación presentes en la intersección."
+},
+{
+  "id": 88,
+  "q": "¿En qué caso puede Ud. circular habiéndosele vencido el I.T.V. de su vehículo?",
+  "opts": [
+    "En ninguno.",
+    "Dentro de los 15 días posteriores al vencimiento."
+  ],
+  "correct": 0,
+  "cat": "documentación",
+  "explicacion": "No está permitido circular con la ITV vencida. Una vez expirado el plazo de vigencia, el vehículo no se encuentra habilitado para circular legalmente, por lo que debe realizar la inspección correspondiente antes de volver a utilizarlo en la vía pública."
+},
+{
+  "id": 89,
+  "q": "La luz del semáforo está roja, pero la flecha de giro derecho está en verde. Esto le indica:",
+  "opts": [
+    "Que debo detenerme cualquiera sea la dirección que vaya a seguir.",
+    "Que debo girar obligatoriamente a la derecha si estoy colocado en ese carril.",
+    "Qué está prohibido girar a la derecha."
+  ],
+  "correct": 1,
+  "cat": "señales",
+  "image": "assets/img/quiz/semaforo.jfif",
+  "explicacion": "Cuando el semáforo principal está en rojo pero la flecha de giro a la derecha está en verde, se permite y habilita exclusivamente el giro a la derecha desde el carril correspondiente. El conductor debe realizar la maniobra si está ubicado en ese carril, respetando siempre la prioridad de peatones y demás usuarios de la vía."
+},
+{
+  "id": 90,
+  "q": "¿Cuándo se pierde la prioridad de paso de mano derecha?",
+  "opts": [
+    "En avenidas.",
+    "Frente a la señal “PARE”.",
+    "Nunca."
+  ],
+  "correct": 1,
+  "cat": "señales",
+  "image": "assets/img/quiz/pare.png",
+  "explicacion": "La prioridad de paso de la derecha se pierde frente a señales que regulan expresamente la circulación, como la señal de PARE. En ese caso, el conductor debe detenerse obligatoriamente y ceder el paso a los vehículos que circulan por la vía transversal."
+}
 ]
 
