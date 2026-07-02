@@ -2851,3 +2851,59 @@ section,
   transition: background-position 0.05s ease;
   z-index: -9999;
 }
+
+
+
+/* BOTON DE RESEÑAS */
+
+
+.reviews-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.google-reviews-button {
+  max-width: 340px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.7rem;
+
+  padding: 0.75rem 1.2rem;
+
+  border-radius: 0.9rem;
+
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  backdrop-filter: blur(10px);
+
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.google-reviews-button svg {
+  height: 22px;
+  width: 22px;
+  flex-shrink: 0;
+}
+
+.google-reviews-button:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.google-reviews-button:active {
+  transform: scale(0.98);
+}
