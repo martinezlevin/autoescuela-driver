@@ -75,57 +75,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #FACC10;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Global Header
@@ -986,11 +935,28 @@ section,
 
 .hero .hero-stats .stat-item {
   padding: 2rem 1rem;
-  background-color: var(--surface-color);
+
+  /* 🔥 conserva tu sistema de colores */
+  background: color-mix(in srgb, var(--surface-color), transparent 20%);
+
   border-radius: 15px;
-  box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 90%);
+
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+
+  /* ✨ glass effect encima de tu base */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 10px 30px color-mix(in srgb, var(--default-color), transparent 90%),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
   transition: all 0.3s ease;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
 }
 
 .hero .hero-stats .stat-item:hover {
@@ -1614,14 +1580,27 @@ section,
 }
 
 .testimonials .testimonial-card {
-  background: var(--surface-color);
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border-radius: 16px;
+
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
   height: 100%;
   display: flex;
   flex-direction: column;
-  transition: 0.3s;
+
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .testimonials .testimonial-card:hover {
@@ -1803,13 +1782,32 @@ section,
 }
 
 .portfolio .portfolio-card {
-  background: var(--surface-color);
-  transition: all 0.4s ease-out;
+  background: color-mix(in srgb, var(--surface-color), transparent 15%);
+
+  border-radius: 16px;
+
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+
   overflow: hidden;
+
+  transition: all 0.4s ease-out;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 10px 25px color-mix(in srgb, var(--default-color), transparent 90%),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .portfolio .portfolio-card:hover {
   transform: translateY(-8px);
+
+  border-color: var(--accent-color);
+
+  box-shadow:
+    0 18px 45px color-mix(in srgb, var(--default-color), transparent 85%),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .portfolio .portfolio-card:hover .image-container img {
@@ -1862,7 +1860,7 @@ section,
   transition: transform 0.4s ease-out 0.1s;
 }
 
-.portfolio-card:hover .portfolio .image-container .overlay-content {
+.portfolio .portfolio-card:hover .image-container .overlay-content {
   transform: translateY(0);
 }
 
@@ -1917,268 +1915,6 @@ section,
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
   }
-}
-
-/*--------------------------------------------------------------
-# Team Section
---------------------------------------------------------------*/
-.team .team-member {
-  position: relative;
-  background-color: var(--surface-color);
-  border-radius: 20px;
-  overflow: hidden;
-  transition: 0.4s;
-  border: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 100%;
-}
-
-.team .team-member:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px color-mix(in srgb, var(--accent-color), transparent 80%);
-  border-color: var(--accent-color);
-}
-
-.team .team-member:hover .member-image:before {
-  opacity: 1;
-}
-
-.team .team-member:hover .member-image img {
-  transform: scale(1.1);
-}
-
-.team .team-member:hover .social-overlay {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.team .team-member:hover .member-info h4 {
-  color: var(--accent-color);
-}
-
-.team .member-image {
-  position: relative;
-  height: 280px;
-  overflow: hidden;
-}
-
-.team .member-image:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), transparent 50%) 100%);
-  opacity: 0;
-  transition: 0.4s;
-  z-index: 1;
-}
-
-.team .member-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.team .social-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-  padding: 30px 20px 20px;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: 0.4s;
-  z-index: 2;
-}
-
-.team .social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-}
-
-.team .social-icons a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  color: var(--contrast-color);
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.team .social-icons a:hover {
-  background-color: var(--contrast-color);
-  color: var(--accent-color);
-  transform: scale(1.1);
-}
-
-.team .member-info {
-  padding: 25px 20px 30px;
-  text-align: center;
-  position: relative;
-}
-
-.team .member-info:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(90deg, var(--accent-color) 0%, color-mix(in srgb, var(--accent-color), transparent 60%) 100%);
-  border-radius: 2px;
-}
-
-.team .member-info h4 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: var(--heading-color);
-  transition: 0.3s;
-}
-
-.team .member-info span {
-  display: block;
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--accent-color);
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.team .member-info p {
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-@media (max-width: 768px) {
-  .team .team-member {
-    margin-bottom: 30px;
-  }
-
-  .team .team-member .member-image {
-    height: 250px;
-  }
-
-  .team .team-member .member-info {
-    padding: 20px 15px 25px;
-  }
-
-  .team .team-member .member-info h4 {
-    font-size: 20px;
-  }
-
-  .team .team-member .member-info p {
-    font-size: 14px;
-  }
-}
-
-/*--------------------------------------------------------------
-# Pricing Section
---------------------------------------------------------------*/
-.pricing .pricing-card {
-  background-color: var(--surface-color);
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  transition: all 0.3s ease;
-  height: 100%;
-}
-
-.pricing .pricing-card:hover {
-  transform: translateY(-10px);
-}
-
-.pricing .pricing-card.featured {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  border: 2px solid var(--accent-color);
-}
-
-.pricing .pricing-card.featured .pricing-header h3 {
-  color: var(--accent-color);
-}
-
-.pricing .pricing-card .pricing-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.pricing .pricing-card .pricing-header h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--heading-color);
-}
-
-.pricing .pricing-card .pricing-header .price {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--accent-color);
-}
-
-.pricing .pricing-card .pricing-header .price .currency {
-  font-size: 1.5rem;
-  vertical-align: super;
-}
-
-.pricing .pricing-card .pricing-header .price .period {
-  font-size: 1rem;
-  font-weight: 400;
-  margin-left: -4px;
-  color: var(--default-color);
-  opacity: 0.7;
-}
-
-.pricing .pricing-card .features-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 2rem;
-}
-
-.pricing .pricing-card .features-list li {
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-.pricing .pricing-card .features-list li i {
-  margin-right: 0.5rem;
-  color: var(--accent-color);
-}
-
-.pricing .pricing-card .features-list li.disabled {
-  opacity: 0.5;
-}
-
-.pricing .pricing-card .features-list li.disabled i {
-  color: var(--default-color);
-}
-
-.pricing .pricing-card .btn-primary {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  color: var(--contrast-color);
-  padding: 0.75rem 2rem;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  border-radius: 50px;
-}
-
-.pricing .pricing-card .btn-primary:hover {
-  background-color: color-mix(in srgb, var(--accent-color), black 20%);
-  border-color: color-mix(in srgb, var(--accent-color), black 20%);
 }
 
 /*--------------------------------------------------------------
@@ -2526,10 +2262,22 @@ section,
 }
 
 .contact .form-container {
-  background-color: var(--surface-color);
+  background: color-mix(in srgb, var(--surface-color), transparent 12%);
+
   border-radius: 20px;
+
   padding: 35px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 12px 30px color-mix(in srgb, var(--default-color), transparent 90%),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+  transition: all 0.3s ease;
 }
 
 .contact .form-container h3 {
@@ -2650,9 +2398,9 @@ section,
     flex-shrink: 0;
 }
 
-
-
-/* Botón Licencia */
+/*--------------------------------------------------------------
+# Botón Licencia
+--------------------------------------------------------------*/
 
 .license-btn {
   --glow-color: rgb(255, 217, 102);
@@ -2739,16 +2487,10 @@ section,
 }
 
 
+/*--------------------------------------------------------------
+# Botón de Acción (WhatsApp)
+--------------------------------------------------------------*/
 
-
-
-
-
-
-
-
-
-/* BOTON DE ACCION */
 .btn-conteiner {
   display: flex;
   justify-content: end;
@@ -2789,14 +2531,12 @@ section,
   transform: scale(1.08);
 }
 
-/* Tamaño del icono */
 .btn-content svg {
   width: 30px;
   height: 30px;
   z-index: 3;
 }
 
-/* Ondas expansivas */
 .btn-content::before,
 .btn-content::after {
   content: "";
@@ -2817,23 +2557,16 @@ section,
   animation: pulse-whatsapp 1s infinite .5s;
 }
 
-/* Animación de las ondas */
 @keyframes pulse-whatsapp {
-  0% {
-    transform: scale(0.8);
-    opacity: 0.8;
-  }
-
-  70% {
-    transform: scale(1.6);
-    opacity: 0;
-  }
-
-  100% {
-    transform: scale(1.6);
-    opacity: 0;
-  }
+  0% { transform: scale(0.8); opacity: 0.8; }
+  70% { transform: scale(1.6); opacity: 0; }
+  100% { transform: scale(1.6); opacity: 0; }
 }
+
+
+/*--------------------------------------------------------------
+# Global Light Effect
+--------------------------------------------------------------*/
 
 .light {
   position: fixed;
@@ -2842,20 +2575,22 @@ section,
   pointer-events: none;
   width: 100vw;
   height: 100vh;
+
   background: radial-gradient(
     circle at 50% 50%,
     rgba(60, 53, 233, 0.8) 0%,
     rgba(60, 53, 233, 0) 100%
   );
+
   mix-blend-mode: screen;
   transition: background-position 0.05s ease;
   z-index: -9999;
 }
 
 
-
-/* BOTON DE RESEÑAS */
-
+/*--------------------------------------------------------------
+# Reviews Button (Liquid Glass)
+--------------------------------------------------------------*/
 
 .reviews-wrapper {
   display: flex;
@@ -2870,27 +2605,46 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 0.7rem;
 
-  padding: 0.75rem 1.2rem;
+  padding: 0.8rem 1.25rem;
 
-  border-radius: 0.9rem;
+  border-radius: 1rem;
 
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.05);
+
   color: #ffffff;
 
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.14);
 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 
   font-size: 0.95rem;
   font-weight: 700;
 
   text-decoration: none;
+
+  position: relative;
+  overflow: hidden;
+
   transition: all 0.25s ease;
+}
+
+.google-reviews-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.14),
+    transparent 65%
+  );
+  pointer-events: none;
 }
 
 .google-reviews-button svg {
@@ -2900,10 +2654,52 @@ section,
 }
 
 .google-reviews-button:hover {
-  transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px) scale(1.04);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+
+  border-color: rgba(255, 255, 255, 0.22);
 }
 
 .google-reviews-button:active {
   transform: scale(0.98);
+}
+
+.google-reviews-button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255,255,255,0.12),
+    transparent 65%
+  );
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+/*--------------------------------------------------------------
+# Testimonials Section - Map Background
+--------------------------------------------------------------*/
+
+#testimonials.testimonials {
+  position: relative;
+  background: url("../img/mapa-cordoba.webp") center/cover no-repeat;
+  overflow: hidden;
+}
+
+#testimonials.testimonials::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+#testimonials.testimonials > * {
+  position: relative;
+  z-index: 2;
 }
