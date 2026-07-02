@@ -228,6 +228,12 @@ function nextQuestion() {
   }
 }
 
+// Definir sonidos (fuera de la función, al inicio del script)
+const soundCorrect = new Audio("assets/audio/correct.mp3");
+const soundWrong   = new Audio("assets/audio/incorrect.mp3");
+const soundPass    = new Audio("assets/audio/approved.mp3");
+
+// Tu función showResults con sonidos
 function showResults() {
   showScreen("screen-results");
   const total = pool.length;
@@ -269,6 +275,15 @@ function showResults() {
   }
 
   document.getElementById("progress-fill").style.width = "100%";
+
+  // 🔊 Sonido de aprobado/reprobado
+  if (pct >= 60) {
+    soundPass.currentTime = 0;
+    soundPass.play();
+  } else {
+    soundWrong.currentTime = 0;
+    soundWrong.play();
+  }
 }
 
 function goMenu() {
@@ -336,17 +351,26 @@ function answer(idx, btn, p) {
   if (ok) {
     correctas++;
     racha++;
-
     lanzarConfeti();
-} else {
+
+    // sonido correcto
+    soundCorrect.currentTime = 0;
+    soundCorrect.play();
+  } else {
     racha = 0;
+
+    // sonido incorrecto
+    soundWrong.currentTime = 0;
+    soundWrong.play();
   }
 
   resultados[current] = {
     id: p.id,
     estado: ok ? "correcta" : "incorrecta",
-    respuesta: idx
+    respuesta: idx,
+    ok: ok 
   };
+
 
   document.getElementById("q-score").textContent = `⭐ ${correctas}`;
   document.getElementById("q-streak").textContent = `🔥 ${racha}`;
