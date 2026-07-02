@@ -331,7 +331,14 @@ h6 {
     display: none;
     list-style: none;
     position: absolute;
-    inset: 60px 20px 20px 20px;
+
+    top: 60px;
+    left: 20px;
+    right: 20px;
+
+    bottom: auto;
+    max-height: calc(100dvh - 100px);
+
     padding: 10px 0;
     margin: 0;
     border-radius: 6px;
@@ -425,13 +432,12 @@ h6 {
     z-index: 9999;
   }
 
-  .mobile-nav-active .navmenu {
-    position: fixed;
-    overflow: hidden;
-    inset: 0;
-    background: rgba(33, 37, 41, 0.8);
-    transition: 0.3s;
-  }
+.mobile-nav-active .navmenu {
+  position: fixed;
+  inset: 0;
+  background: rgba(33, 37, 41, 0.8);
+  height: 100dvh;
+}
 
   .mobile-nav-active .navmenu>ul {
     display: block;
