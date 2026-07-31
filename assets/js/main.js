@@ -73,39 +73,86 @@ if (preloader) {
     preloader.remove();
   }
 }
-  /**
-   * Scroll top button
-   */
-  let scrollTop = document.querySelector('.scroll-top');
 
-  function toggleScrollTop() {
-    if (scrollTop) {
-      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
-    }
+
+/**
+ * Scroll top / Floating buttons
+ */
+
+let scrollTop = document.querySelector('.scroll-top');
+let floatingButtons = document.querySelector('.floating-buttons');
+
+
+function toggleScrollTop() {
+
+  const active = window.scrollY > 100;
+
+
+  if (scrollTop) {
+    scrollTop.classList.toggle('active', active);
   }
+
+
+  if (floatingButtons) {
+    floatingButtons.classList.toggle('active', active);
+  }
+
+}
+
+
+if (scrollTop) {
+
   scrollTop.addEventListener('click', (e) => {
+
     e.preventDefault();
+
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
+
   });
 
-  window.addEventListener('load', toggleScrollTop);
-  document.addEventListener('scroll', toggleScrollTop);
+}
 
-  /**
-   * Animation on scroll function and init
-   */
-  function aosInit() {
+
+window.addEventListener('load', toggleScrollTop);
+window.addEventListener('scroll', toggleScrollTop);
+
+
+
+/**
+ * Animation on scroll function and init
+ */
+
+function aosInit() {
+
     AOS.init({
-      duration: 600,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false,
+        offset: 120
     });
-  }
-  window.addEventListener('load', aosInit);
+
+
+    setTimeout(() => {
+        AOS.refreshHard();
+    }, 1000);
+
+}
+
+
+window.addEventListener('load', aosInit);
+
+
+window.addEventListener('resize', () => {
+
+    if (typeof AOS !== 'undefined') {
+        AOS.refresh();
+    }
+
+});
 
   /**
    * Initiate glightbox

@@ -726,7 +726,6 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/bg/abstract-bg-3.webp");
   background-size: cover;
   background-position: center;
   opacity: 0.1;
@@ -1318,7 +1317,6 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("assets/img/bg/dotted-world-1.webp");
   background-size: cover;
   opacity: 0.05;
   z-index: 1;
@@ -2486,84 +2484,6 @@ section,
   }
 }
 
-
-/*--------------------------------------------------------------
-# Botón de Acción (WhatsApp)
---------------------------------------------------------------*/
-
-.btn-conteiner {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  margin: 10px;
-
-  --color-background: #3BC24D;
-
-  position: fixed;
-  bottom: 65px;
-  right: 5px;
-  z-index: 1000;
-}
-
-.btn-content {
-  width: 44px;
-  height: 44px;
-  isolation: isolate;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  text-decoration: none;
-
-  background: var(--color-background);
-  border-radius: 50%;
-
-  position: relative;
-
-  box-shadow:
-    0 4px 20px rgba(59, 194, 77, 0.35),
-    0 0 30px rgba(59, 194, 77, 0.2);
-
-  transition: transform 0.3s ease;
-}
-
-.btn-content:hover {
-  transform: scale(1.08);
-}
-
-.btn-content svg {
-  width: 30px;
-  height: 30px;
-  z-index: 3;
-}
-
-.btn-content::before,
-.btn-content::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-
-  background: var(--color-background);
-  border-radius: 50%;
-
-  z-index: -1;
-}
-
-.btn-content::before {
-  animation: pulse-whatsapp 1s infinite;
-}
-
-.btn-content::after {
-  animation: pulse-whatsapp 1s infinite .5s;
-}
-
-@keyframes pulse-whatsapp {
-  0% { transform: scale(0.8); opacity: 0.8; }
-  70% { transform: scale(1.6); opacity: 0; }
-  100% { transform: scale(1.6); opacity: 0; }
-}
-
-
 /*--------------------------------------------------------------
 # Global Light Effect
 --------------------------------------------------------------*/
@@ -2702,4 +2622,547 @@ section,
 #testimonials.testimonials > * {
   position: relative;
   z-index: 2;
+}
+
+/*--------------------------------------------------------------
+# Semáforo flotante
+--------------------------------------------------------------*/
+
+.floating-buttons{
+
+    position:fixed;
+    right:18px;
+    bottom:18px;
+
+    width:66px;
+    padding:10px 0;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+
+    background: linear-gradient(180deg, #2a2a2a, #121212);
+    border: 2px solid rgba(255,255,255,.08);
+
+    border-radius:35px;
+
+    box-shadow:
+        0 10px 35px rgba(0,0,0,.45),
+        inset 0 0 0 2px rgba(255,255,255,.05);
+
+    z-index:99999;
+
+    visibility:hidden;
+    opacity:0;
+    transform:translateY(70px);
+
+    transition:all .4s ease;
+}
+
+.floating-buttons.active{
+
+    visibility:visible;
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+/*=========================
+= BOTÓN BASE
+=========================*/
+
+.floating-btn{
+
+    width:46px;
+    height:46px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+
+    text-decoration:none;
+
+    transition:.3s ease;
+
+    isolation:isolate;
+
+}
+
+
+.floating-btn:hover{
+
+    transform:scale(1.12);
+
+}
+
+/*=========================
+= LUZ AL HOVER
+=========================*/
+
+.floating-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-8px;
+
+    border-radius:50%;
+
+    opacity:0;
+
+    filter:blur(10px);
+
+    z-index:-1;
+
+    transition:.35s ease;
+
+}
+
+
+.floating-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-20px;
+
+    border-radius:50%;
+
+    opacity:0;
+
+    filter:blur(22px);
+
+    z-index:-2;
+
+    transition:.5s ease;
+
+}
+
+
+/* Activación del brillo */
+
+.floating-btn:hover::before,
+.floating-btn:hover::after{
+
+    opacity:1;
+
+}
+
+
+/*=========================
+= ROJO
+=========================*/
+
+.scroll-top-btn{
+
+    background:#dc3545;
+
+    box-shadow:
+        0 0 12px rgba(220,53,69,.45);
+
+    right:-0.5px;
+    top:2px;
+
+}
+
+
+/* Luz cercana */
+
+.scroll-top-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-8px;
+
+    border-radius:50%;
+
+    background:#dc3545;
+
+    filter:blur(10px);
+
+    opacity:0;
+
+    z-index:-1;
+
+    transition:.35s ease;
+
+}
+
+
+/* Halo exterior */
+
+.scroll-top-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-18px;
+
+    border-radius:50%;
+
+    background:rgba(220,53,69,.35);
+
+    filter:blur(18px);
+
+    opacity:0;
+
+    z-index:-2;
+
+    pointer-events:none;
+
+    transition:.45s ease;
+
+}
+
+
+/* Activación de luz */
+
+.scroll-top-btn:hover::before,
+.scroll-top-btn:hover::after{
+
+    opacity:1;
+
+}
+
+
+.scroll-top-btn:hover{
+
+    transform:scale(1.12);
+
+    box-shadow:
+
+        0 0 18px rgba(220,53,69,.75),
+
+        0 0 35px rgba(220,53,69,.45);
+
+}
+
+
+
+.scroll-top-btn i{
+
+    font-size:30px;
+
+    color:#fff;
+
+    line-height:1;
+
+}
+
+/*=========================
+= AMARILLO
+=========================*/
+
+.download-btn{
+
+    background:#ffc107;
+
+    box-shadow:
+        0 0 12px rgba(255,193,7,.45);
+
+    isolation:isolate;
+
+}
+
+
+/* Luz cercana */
+
+.download-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-8px;
+
+    border-radius:50%;
+
+    background:#ffc107;
+
+    filter:blur(10px);
+
+    opacity:0;
+
+    z-index:-1;
+
+    pointer-events:none;
+
+    transition:.35s ease;
+
+}
+
+
+/* Halo exterior */
+
+.download-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-18px;
+
+    border-radius:50%;
+
+    background:rgba(255,193,7,.35);
+
+    filter:blur(18px);
+
+    opacity:0;
+
+    z-index:-2;
+
+    pointer-events:none;
+
+    transition:.45s ease;
+
+}
+
+
+/* Activación de luz */
+
+.download-btn:hover::before,
+.download-btn:hover::after{
+
+    opacity:1;
+
+}
+
+
+.download-btn:hover{
+
+    transform:scale(1.12);
+
+    box-shadow:
+
+        0 0 18px rgba(255,193,7,.75),
+
+        0 0 35px rgba(255,193,7,.45);
+
+}
+
+
+
+.download-btn i{
+
+    font-size:22px;
+
+    color:#fff;
+
+}
+
+/*=========================
+= VERDE
+=========================*/
+
+.whatsapp-btn{
+
+    background:#39c54a;
+
+    box-shadow:
+        0 0 12px rgba(57,197,74,.45);
+
+    isolation:isolate;
+
+}
+
+
+/* Luz cercana */
+
+.whatsapp-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-8px;
+
+    border-radius:50%;
+
+    background:#39c54a;
+
+    filter:blur(10px);
+
+    opacity:0;
+
+    z-index:-1;
+
+    pointer-events:none;
+
+    transition:.35s ease;
+
+}
+
+
+/* Halo exterior */
+
+.whatsapp-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-18px;
+
+    border-radius:50%;
+
+    background:rgba(57,197,74,.35);
+
+    filter:blur(18px);
+
+    opacity:0;
+
+    z-index:-2;
+
+    pointer-events:none;
+
+    transition:.45s ease;
+
+}
+
+
+/* Activación de luz */
+
+.whatsapp-btn:hover::before,
+.whatsapp-btn:hover::after{
+
+    opacity:1;
+
+}
+
+
+.whatsapp-btn:hover{
+
+    transform:scale(1.12);
+
+    box-shadow:
+
+        0 0 18px rgba(57,197,74,.75),
+
+        0 0 35px rgba(57,197,74,.45);
+
+}
+
+
+
+.whatsapp-btn svg{
+
+    width:27px;
+    height:27px;
+
+}
+
+
+/*=========================
+= MOBILE
+=========================*/
+
+@media (max-width:768px){
+
+    .floating-buttons{
+
+        width:54px;
+
+        padding:8px 0;
+
+        gap:8px;
+
+        right:10px;
+
+        bottom:14px;
+
+        border-radius:30px;
+
+    }
+
+
+    .floating-btn{
+
+        width:38px;
+
+        height:38px;
+
+    }
+
+
+    .scroll-top-btn i{
+
+        font-size:24px;
+
+    }
+
+
+    .download-btn i{
+
+        font-size:18px;
+
+    }
+
+
+    .whatsapp-btn svg{
+
+        width:23px;
+        height:23px;
+
+    }
+
+
+    .floating-btn::after{
+
+        inset:-12px;
+
+        filter:blur(14px);
+
+    }
+
+
+    .floating-btn::before{
+
+        inset:-5px;
+
+        filter:blur(7px);
+
+    }
+
+}
+
+
+@keyframes trafficGlow{
+
+    0%,100%{
+
+        transform:scale(1);
+
+        opacity:.45;
+
+    }
+
+
+    50%{
+
+        transform:scale(1.18);
+
+        opacity:.8;
+
+    }
+
+}
+
+
+[data-aos] {
+    pointer-events: none;
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
 }
